@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MR Antônio Refrigeração | Consertos em Ribeirão Preto</title>
+<meta content="MR Antônio Refrigeração: conserto e manutenção de geladeiras, freezers, micro-ondas, máquinas de lavar, fornos, fogões e eletroportáteis em Ribeirão Preto e região." name="description"/>
+<meta content="#073b73" name="theme-color"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{
+      --navy:#062b55;
+      --blue:#0072bc;
+      --blue2:#0a569d;
+      --ice:#f3faff;
+      --orange:#f28c22;
+      --text:#17314d;
+      --muted:#61748a;
+      --white:#fff;
+      --line:rgba(6,43,85,.12);
+      --shadow:0 18px 48px rgba(6,43,85,.13);
+      --max:1180px;
+      --whats:#25D366;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:#fff;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+
+    h1,h2,h3,h4,.btn,.menu a,.brand-title,.section-label{
+      font-family:Montserrat,Arial,sans-serif;
+    }
+
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+    .container{width:min(var(--max),calc(100% - 36px));margin:auto}
+
+    .topbar{
+      background:var(--navy);
+      color:rgba(255,255,255,.92);
+      font-size:13px;
+    }
+
+    .topbar .container{
+      min-height:42px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .topbar-group{
+      display:flex;
+      align-items:center;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+
+    .topbar strong{color:#d9f3ff}
+    .topbar a{transition:.2s}
+    .topbar a:hover{color:#fff;text-decoration:underline}
+
+    .header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.97);
+      border-bottom:1px solid rgba(6,43,85,.08);
+      box-shadow:0 10px 28px rgba(6,43,85,.06);
+      backdrop-filter:blur(14px);
+    }
+
+    .nav{
+      min-height:86px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:230px;
+    }
+
+    .brand-logo{
+      width:64px;
+      height:64px;
+      border-radius:6px;
+      overflow:hidden;
+      background:#fff;
+      border:1px solid var(--line);
+      box-shadow:0 10px 26px rgba(6,43,85,.10);
+      flex:0 0 auto;
+    }
+
+    .brand-logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .brand-title{
+      display:block;
+      font-weight:900;
+      font-size:20px;
+      color:var(--navy);
+      line-height:1.05;
+      text-transform:uppercase;
+      letter-spacing:-.02em;
+    }
+
+    .menu{
+      display:flex;
+      align-items:center;
+      gap:4px;
+    }
+
+    .menu a{
+      padding:31px 13px;
+      color:var(--text);
+      font-size:13.5px;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.02em;
+      border-bottom:3px solid transparent;
+      transition:.2s;
+    }
+
+    .menu a:hover{
+      color:var(--blue2);
+      border-color:var(--orange);
+      background:rgba(33,169,232,.05);
+    }
+
+    .actions{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:9px;
+      border:0;
+      cursor:pointer;
+      border-radius:4px;
+      padding:14px 18px;
+      font-size:13.5px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.02em;
+      transition:transform .2s ease, box-shadow .2s ease;
+      white-space:nowrap;
+    }
+
+    .btn:hover{transform:translateY(-2px)}
+    .btn-orange{background:linear-gradient(135deg,var(--orange),#d87412);color:#fff;box-shadow:0 14px 30px rgba(242,140,34,.28)}
+    .btn-blue{background:linear-gradient(135deg,#073b73,var(--blue));color:#fff;box-shadow:0 14px 30px rgba(0,114,188,.24)}
+    .btn-whats{background:linear-gradient(135deg,#1cbd5b,var(--whats));color:#fff;box-shadow:0 14px 30px rgba(37,211,102,.25)}
+    .btn-outline{background:#fff;color:var(--blue2);border:1px solid rgba(6,43,85,.16)}
+
+    .toggle{
+      display:none;
+      width:46px;
+      height:46px;
+      background:var(--blue2);
+      border:0;
+      border-radius:4px;
+      cursor:pointer;
+    }
+
+    .toggle span{
+      display:block;
+      width:22px;
+      height:2px;
+      background:#fff;
+      margin:5px auto;
+      border-radius:999px;
+    }
+
+    .hero{
+      min-height:580px;
+      display:flex;
+      align-items:center;
+      position:relative;
+      color:#fff;
+      background:
+        linear-gradient(90deg,rgba(6,43,85,.96),rgba(7,59,115,.84) 52%,rgba(6,43,85,.48)),
+        radial-gradient(circle at 84% 30%,rgba(33,169,232,.35),transparent 36%),
+        linear-gradient(135deg,#0a315f,#0a569d);
+      overflow:hidden;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:
+        linear-gradient(135deg,rgba(255,255,255,.06) 25%,transparent 25%),
+        linear-gradient(225deg,rgba(255,255,255,.05) 25%,transparent 25%);
+      background-size:64px 64px;
+      opacity:.35;
+    }
+
+    .hero .container{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:1.12fr .88fr;
+      align-items:center;
+      gap:42px;
+      padding:58px 0;
+    }
+
+    .label{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      padding:10px 14px;
+      border-radius:4px;
+      background:rgba(242,140,34,.16);
+      border-left:4px solid var(--orange);
+      color:#fff;
+      font-size:13px;
+      font-weight:800;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+
+    .hero h1{
+      max-width:760px;
+      font-size:clamp(38px,5.2vw,66px);
+      line-height:1.02;
+      letter-spacing:-.045em;
+      margin-bottom:20px;
+      text-transform:uppercase;
+    }
+
+    .hero h1 span{color:#83ddff}
+
+    .hero p{
+      max-width:650px;
+      color:rgba(255,255,255,.82);
+      font-size:18px;
+      margin-bottom:28px;
+    }
+
+    .hero-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+
+    .hero-panel{
+      background:rgba(255,255,255,.94);
+      border-radius:8px;
+      padding:28px;
+      box-shadow:0 26px 70px rgba(0,0,0,.24);
+      border-top:5px solid var(--orange);
+      color:var(--text);
+    }
+
+    .hero-panel h3{
+      font-size:20px;
+      text-transform:uppercase;
+      color:var(--navy);
+      margin-bottom:12px;
+    }
+
+    .hero-panel p{
+      font-size:15px;
+      color:var(--muted);
+      margin-bottom:18px;
+    }
+
+    .hero-list{
+      list-style:none;
+      display:grid;
+      gap:12px;
+    }
+
+    .hero-list li{
+      display:flex;
+      gap:11px;
+      align-items:flex-start;
+      font-weight:700;
+      color:var(--text);
+    }
+
+    .hero-list li::before{
+      content:"✓";
+      width:24px;
+      height:24px;
+      border-radius:50%;
+      display:inline-grid;
+      place-items:center;
+      background:#eaf7ff;
+      color:var(--blue2);
+      font-weight:900;
+      flex:0 0 auto;
+      font-size:14px;
+    }
+
+    .quick{
+      background:#fff;
+      margin-top:-38px;
+      position:relative;
+      z-index:4;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      box-shadow:var(--shadow);
+      border-radius:8px;
+      overflow:hidden;
+      border:1px solid rgba(6,43,85,.10);
+    }
+
+    .quick-box{
+      min-height:116px;
+      padding:22px;
+      background:#fff;
+      border-right:1px solid rgba(6,43,85,.08);
+      display:block;
+    }
+
+    .quick-box:last-child{border-right:0}
+
+
+    .quick-box strong{
+      display:block;
+      font-size:15px;
+      text-transform:uppercase;
+      color:var(--navy);
+      margin-bottom:4px;
+    }
+
+    .quick-box span{
+      color:var(--muted);
+      font-size:13.5px;
+    }
+
+    .quick-box.business{
+      background:linear-gradient(135deg,#062b55,#0a569d);
+      color:#fff;
+    }
+
+    .quick-box.business strong,
+    .quick-box.business span{color:#fff}
+
+
+    .section{padding:78px 0}
+
+    .section-title{
+      text-align:center;
+      max-width:840px;
+      margin:0 auto 40px;
+    }
+
+    .section-label{
+      display:inline-block;
+      color:var(--orange);
+      font-size:13px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+      margin-bottom:8px;
+    }
+
+    .section-title h2{
+      color:var(--navy);
+      font-size:clamp(30px,4vw,46px);
+      line-height:1.08;
+      text-transform:uppercase;
+      letter-spacing:-.035em;
+      margin-bottom:12px;
+    }
+
+    .section-title p{
+      color:var(--muted);
+      font-size:16px;
+    }
+
+    .business-highlight{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:22px;
+      align-items:center;
+      margin:0 0 30px;
+      padding:28px;
+      border-radius:10px;
+      background:
+        linear-gradient(135deg,rgba(6,43,85,.98),rgba(10,86,157,.95)),
+        radial-gradient(circle at right,rgba(242,140,34,.35),transparent 40%);
+      color:#fff;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .business-highlight::after{
+      content:"";
+      position:absolute;
+      right:-70px;
+      top:-90px;
+      width:240px;
+      height:240px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+    }
+
+    .business-highlight > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .business-highlight h3{
+      font-size:clamp(24px,3vw,34px);
+      line-height:1.1;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      letter-spacing:-.03em;
+    }
+
+    .business-highlight p{
+      color:rgba(255,255,255,.84);
+      font-size:16px;
+    }
+
+    .business-pills{
+      display:flex;
+      gap:9px;
+      flex-wrap:wrap;
+      margin-top:16px;
+    }
+
+    .business-pills span{
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.12);
+      font-weight:800;
+      font-size:12.5px;
+      text-transform:uppercase;
+      color:#fff;
+    }
+
+    .business-actions{
+      display:flex;
+      justify-content:flex-end;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .carousel-wrap{position:relative}
+
+    .carousel-controls{
+      display:flex;
+      justify-content:flex-end;
+      gap:10px;
+      margin-bottom:18px;
+    }
+
+    .carousel-btn{
+      width:48px;
+      height:48px;
+      border:1px solid rgba(6,43,85,.14);
+      background:#fff;
+      color:var(--navy);
+      border-radius:6px;
+      font-size:22px;
+      font-weight:900;
+      cursor:pointer;
+      box-shadow:0 12px 26px rgba(6,43,85,.08);
+      transition:.2s;
+    }
+
+    .carousel-btn:hover{
+      transform:translateY(-2px);
+      background:var(--ice);
+    }
+
+    .carousel-track{
+      display:grid;
+      grid-auto-flow:column;
+      grid-auto-columns:calc((100% - 32px)/3);
+      gap:16px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      padding-bottom:8px;
+      scrollbar-width:none;
+    }
+
+    .carousel-track::-webkit-scrollbar{display:none}
+
+    .carousel-card{
+      background:#fff;
+      border:1px solid rgba(6,43,85,.10);
+      border-radius:8px;
+      box-shadow:0 14px 38px rgba(6,43,85,.08);
+      overflow:hidden;
+      scroll-snap-align:start;
+      display:flex;
+      flex-direction:column;
+    }
+
+    .carousel-image{
+      aspect-ratio:16/10;
+      background:#ffffff;
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:14px;
+    }
+
+    .carousel-image img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      object-position:center center;
+      transition:transform .25s ease;
+      background:#ffffff;
+    }
+
+    .carousel-card:hover .carousel-image img{transform:scale(1.02)}
+
+    .carousel-image img.tall-appliance{
+      padding:2px 26px 0;
+    }
+
+    .service-badge{
+      position:absolute;
+      left:14px;
+      top:14px;
+      padding:7px 10px;
+      border-radius:999px;
+      background:rgba(6,43,85,.86);
+      color:#fff;
+      font-size:11.5px;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:.04em;
+    }
+
+    .carousel-content{
+      padding:22px;
+      display:flex;
+      flex-direction:column;
+      flex:1;
+    }
+
+    .carousel-content h3{
+      color:var(--navy);
+      font-size:20px;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      letter-spacing:-.02em;
+    }
+
+    .carousel-content p{
+      color:var(--muted);
+      font-size:14.5px;
+      margin-bottom:18px;
+      flex:1;
+    }
+
+    .service-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      color:#fff;
+      background:linear-gradient(135deg,#1cbd5b,var(--whats));
+      font-size:13px;
+      font-weight:900;
+      text-transform:uppercase;
+      border-radius:4px;
+      padding:12px 14px;
+      box-shadow:0 12px 26px rgba(37,211,102,.20);
+      transition:.2s;
+    }
+
+    .service-link:hover{transform:translateY(-2px)}
+
+    .carousel-dots{
+      display:flex;
+      justify-content:center;
+      gap:8px;
+      margin-top:16px;
+      flex-wrap:wrap;
+    }
+
+    .dot{
+      width:10px;
+      height:10px;
+      border-radius:50%;
+      background:#c9dcec;
+      border:0;
+      cursor:pointer;
+      transition:.2s;
+    }
+
+    .dot.active{
+      width:30px;
+      border-radius:999px;
+      background:var(--orange);
+    }
+
+    .about{
+      background:var(--ice);
+      border-top:1px solid rgba(6,43,85,.08);
+      border-bottom:1px solid rgba(6,43,85,.08);
+    }
+
+    .about-grid{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:42px;
+      align-items:center;
+    }
+
+    .about-card{
+      background:#fff;
+      border-radius:8px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      border-left:5px solid var(--orange);
+    }
+
+    .about-card img{
+      width:min(100%,430px);
+      margin:auto;
+      border-radius:6px;
+      border:1px solid rgba(6,43,85,.10);
+    }
+
+    .visual-card{
+      min-height:360px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      gap:22px;
+      background:
+        linear-gradient(135deg,rgba(255,255,255,.96),rgba(243,250,255,.96)),
+        radial-gradient(circle at 20% 10%,rgba(0,114,188,.18),transparent 34%);
+    }
+
+    .visual-title{
+      font-family:Montserrat,Arial,sans-serif;
+      font-weight:900;
+      color:var(--navy);
+      font-size:clamp(28px,4vw,40px);
+      line-height:1.05;
+      text-transform:uppercase;
+      letter-spacing:-.035em;
+    }
+
+    .visual-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:12px;
+    }
+
+    .visual-grid div{
+      min-height:96px;
+      border-radius:8px;
+      background:#fff;
+      border:1px solid rgba(6,43,85,.10);
+      display:grid;
+      place-items:center;
+      text-align:center;
+      gap:6px;
+      box-shadow:0 12px 28px rgba(6,43,85,.07);
+      padding:12px;
+    }
+
+    .visual-grid span{font-size:28px}
+    .visual-grid strong{
+      color:var(--navy);
+      font-family:Montserrat,Arial,sans-serif;
+      font-size:13px;
+      text-transform:uppercase;
+    }
+
+    .visual-card p{
+      color:var(--muted);
+      margin:0;
+      font-weight:700;
+    }
+
+    .about-text h2{
+      color:var(--navy);
+      font-size:clamp(30px,4vw,46px);
+      text-transform:uppercase;
+      line-height:1.08;
+      letter-spacing:-.035em;
+      margin-bottom:16px;
+    }
+
+    .about-text p{
+      color:var(--muted);
+      margin-bottom:18px;
+      font-size:16px;
+    }
+
+    .checks{
+      list-style:none;
+      display:grid;
+      gap:12px;
+      margin:24px 0 26px;
+    }
+
+    .checks li{
+      display:flex;
+      gap:11px;
+      align-items:flex-start;
+      color:var(--text);
+      font-weight:700;
+    }
+
+    .checks li::before{
+      content:"✓";
+      width:24px;
+      height:24px;
+      border-radius:50%;
+      display:inline-grid;
+      place-items:center;
+      background:#eaf7ff;
+      color:var(--blue2);
+      font-weight:900;
+      flex:0 0 auto;
+      font-size:14px;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+
+    .step{
+      position:relative;
+      padding:28px 22px;
+      background:#fff;
+      border:1px solid rgba(6,43,85,.10);
+      border-radius:8px;
+      box-shadow:0 14px 38px rgba(6,43,85,.07);
+      overflow:hidden;
+    }
+
+    .step-number{
+      position:absolute;
+      top:18px;
+      right:18px;
+      color:rgba(6,43,85,.08);
+      font-size:48px;
+      font-weight:900;
+      line-height:1;
+    }
+
+    .step h3{
+      color:var(--navy);
+      font-size:18px;
+      text-transform:uppercase;
+      margin-bottom:10px;
+      padding-right:48px;
+    }
+
+    .step p{
+      color:var(--muted);
+      font-size:14.5px;
+    }
+
+    .tips{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+
+    .tip{
+      border-radius:8px;
+      border:1px solid rgba(6,43,85,.10);
+      background:#fff;
+      box-shadow:0 14px 38px rgba(6,43,85,.07);
+      overflow:hidden;
+    }
+
+    .tip-head{
+      min-height:84px;
+      padding:22px;
+      background:linear-gradient(135deg,var(--navy),var(--blue2));
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .tip-head strong{
+      font-size:16px;
+      text-transform:uppercase;
+    }
+
+    .tip-body{padding:22px}
+
+    .tip-body p{
+      color:var(--muted);
+      font-size:14.5px;
+      margin-bottom:18px;
+    }
+
+    .cta{
+      background:linear-gradient(90deg,rgba(6,43,85,.96),rgba(7,59,115,.90)),radial-gradient(circle at right,rgba(33,169,232,.30),transparent 38%);
+      color:#fff;
+      padding:54px 0;
+    }
+
+    .cta-grid{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:28px;
+      align-items:center;
+    }
+
+    .cta h2{
+      font-size:clamp(28px,4vw,44px);
+      text-transform:uppercase;
+      line-height:1.08;
+      letter-spacing:-.035em;
+      margin-bottom:12px;
+    }
+
+    .cta p{
+      color:rgba(255,255,255,.78);
+      max-width:640px;
+    }
+
+    .cta-actions{
+      display:flex;
+      justify-content:flex-end;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .contact{background:var(--ice)}
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:.92fr 1.08fr;
+      gap:24px;
+      align-items:stretch;
+    }
+
+    .panel{
+      background:#fff;
+      border-radius:8px;
+      border:1px solid rgba(6,43,85,.10);
+      box-shadow:var(--shadow);
+      padding:30px;
+    }
+
+    .panel h3{
+      color:var(--navy);
+      font-size:26px;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+
+    .panel>p{
+      color:var(--muted);
+      margin-bottom:24px;
+    }
+
+    .contact-list{
+      display:grid;
+      gap:14px;
+    }
+
+    .contact-item{
+      display:block;
+      padding:14px;
+      background:var(--ice);
+      border:1px solid rgba(6,43,85,.08);
+      border-radius:6px;
+    }
+
+
+    .contact-item strong{
+      display:block;
+      color:var(--navy);
+      font-size:13.5px;
+      text-transform:uppercase;
+      margin-bottom:2px;
+    }
+
+    .contact-item span{
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .social-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:18px;
+    }
+
+    .social-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:42px;
+      padding:10px 13px;
+      border-radius:999px;
+      background:#fff;
+      color:var(--navy);
+      border:1px solid rgba(6,43,85,.12);
+      font-weight:900;
+      font-size:12.5px;
+      text-transform:uppercase;
+      box-shadow:0 10px 24px rgba(6,43,85,.06);
+      transition:.2s;
+    }
+
+    .social-link:hover{
+      transform:translateY(-2px);
+      color:var(--blue2);
+      background:var(--ice);
+    }
+
+    .map-card{
+      margin-top:16px;
+      overflow:hidden;
+      border-radius:8px;
+      border:1px solid rgba(6,43,85,.10);
+      background:#fff;
+      box-shadow:0 14px 34px rgba(6,43,85,.07);
+    }
+
+    .map-card iframe{
+      width:100%;
+      height:220px;
+      border:0;
+      display:block;
+    }
+
+    .map-card a{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      padding:13px 15px;
+      color:var(--navy);
+      font-weight:900;
+      text-transform:uppercase;
+      font-size:12.5px;
+      background:#fff;
+    }
+
+    .map-card a:hover{
+      color:var(--blue2);
+      background:var(--ice);
+    }
+
+    footer .social-link{
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      border-color:rgba(255,255,255,.16);
+      box-shadow:none;
+    }
+
+    footer .social-link:hover{
+      background:rgba(255,255,255,.14);
+      color:#fff;
+    }
+
+    form{
+      display:grid;
+      gap:14px;
+    }
+
+    .field-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+    }
+
+    .field{
+      display:grid;
+      gap:7px;
+    }
+
+    label{
+      font-size:12.5px;
+      text-transform:uppercase;
+      color:var(--navy);
+      font-weight:900;
+    }
+
+    input,select,textarea{
+      width:100%;
+      border:1px solid rgba(6,43,85,.14);
+      border-radius:4px;
+      background:#fff;
+      color:var(--text);
+      font:inherit;
+      padding:13px 14px;
+      outline:0;
+      transition:border-color .2s ease, box-shadow .2s ease;
+    }
+
+    input:focus,select:focus,textarea:focus{
+      border-color:var(--blue);
+      box-shadow:0 0 0 4px rgba(0,114,188,.10);
+    }
+
+    textarea{
+      min-height:118px;
+      resize:vertical;
+    }
+
+    footer{
+      background:var(--navy);
+      color:rgba(255,255,255,.82);
+      padding:46px 0 20px;
+    }
+
+    .footer-grid{
+      display:grid;
+      grid-template-columns:1.1fr .65fr .85fr .75fr;
+      gap:30px;
+      padding-bottom:34px;
+      border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    .footer-logo{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      margin-bottom:16px;
+    }
+
+    .footer-logo .brand-logo{
+      box-shadow:none;
+      border-color:rgba(255,255,255,.14);
+    }
+
+    footer h4{
+      color:#fff;
+      font-size:16px;
+      text-transform:uppercase;
+      margin-bottom:14px;
+    }
+
+    .footer-links{
+      list-style:none;
+      display:grid;
+      gap:8px;
+    }
+
+    .footer-links a:hover{
+      text-decoration:underline;
+      color:#fff;
+    }
+
+    .footer-bottom{
+      padding-top:18px;
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      flex-wrap:wrap;
+      font-size:13px;
+    }
+
+    .float-wa{
+      position:fixed;
+      right:20px;
+      bottom:20px;
+      z-index:90;
+      width:62px;
+      height:62px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      color:#fff;
+      background:linear-gradient(135deg,#1cbd5b,var(--whats));
+      box-shadow:0 18px 38px rgba(37,211,102,.34);
+      border:4px solid #fff;
+      animation:pulse 2.2s infinite;
+      font-size:15px;
+      font-weight:900;
+      letter-spacing:.04em;
+    }
+
+    @keyframes pulse{
+      0%{box-shadow:0 0 0 0 rgba(37,211,102,.38),0 18px 38px rgba(37,211,102,.34)}
+      70%{box-shadow:0 0 0 18px rgba(37,211,102,0),0 18px 38px rgba(37,211,102,.34)}
+      100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 18px 38px rgba(37,211,102,.34)}
+    }
+
+    @media(max-width:1100px){
+      .actions .btn-orange{display:none}
+      .hero .container,.about-grid,.cta-grid,.contact-grid,.business-highlight{grid-template-columns:1fr}
+      .quick{margin-top:0;padding-top:20px}
+      .quick-grid,.steps{grid-template-columns:repeat(2,1fr)}
+      .cta-actions,.business-actions{justify-content:flex-start}
+      .carousel-track{grid-auto-columns:calc((100% - 16px)/2)}
+    }
+
+    @media(max-width:920px){
+      .topbar .container{justify-content:center;text-align:center}
+      .nav{min-height:78px}
+      .brand{min-width:0}
+      .actions .btn-blue{display:none}
+      .toggle{display:block}
+      .menu{
+        position:fixed;
+        top:120px;
+        left:16px;
+        right:16px;
+        display:grid;
+        gap:0;
+        padding:10px;
+        background:#fff;
+        border-radius:8px;
+        box-shadow:var(--shadow);
+        border:1px solid var(--line);
+        opacity:0;
+        transform:translateY(-14px);
+        pointer-events:none;
+        transition:.22s;
+      }
+      .menu.open{
+        opacity:1;
+        transform:translateY(0);
+        pointer-events:auto;
+      }
+      .menu a{
+        padding:14px 12px;
+        border-bottom:0;
+        border-radius:4px;
+      }
+      .menu a:hover{
+        background:var(--ice);
+        border-color:transparent;
+      }
+      .tips,.footer-grid{grid-template-columns:1fr}
+    }
+
+    @media(max-width:760px){
+      .carousel-track{grid-auto-columns:100%}
+    }
+
+    @media(max-width:660px){
+      .container{width:min(var(--max),calc(100% - 24px))}
+      .brand-logo{width:52px;height:52px}
+      .brand-title{font-size:16px}
+      .hero{min-height:auto}
+      .hero .container{padding:42px 0}
+      .hero h1{font-size:clamp(34px,11vw,48px)}
+      .hero p{font-size:16px}
+      .hero-actions .btn,.business-actions .btn{width:100%}
+      .hero-panel,.about-card,.panel,.business-highlight{padding:22px}
+      .quick-grid,.steps,.field-grid{grid-template-columns:1fr}
+      .quick-box{border-right:0;border-bottom:1px solid rgba(6,43,85,.08)}
+      .quick-box:last-child{border-bottom:0}
+      .section{padding:56px 0}
+      .footer-bottom{text-align:center;justify-content:center}
+      .float-wa{width:58px;height:58px;right:14px;bottom:14px}
+      .carousel-controls{justify-content:center}
+    }
+
+    .topbar-item{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:rgba(255,255,255,.92);
+    }
+
+    .topbar-item i,
+    .topbar-socials a i{
+      font-size:14px;
+    }
+
+    .topbar-socials{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+
+    .topbar-socials a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:18px;
+      height:18px;
+      color:#fff;
+      font-size:16px;
+    }
+
+    .topbar-socials a:hover{
+      color:#d9f3ff;
+      text-decoration:none;
+    }
+
+    .btn i,
+    .service-link i,
+    .map-card a i,
+    .float-wa i,
+    .contact-item i,
+    .social-link i{
+      margin-right:8px;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .contact-item i{
+      width:18px;
+      text-align:center;
+      color:var(--blue2);
+      margin-right:0;
+      flex:0 0 18px;
+    }
+
+    .social-link{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .social-link i{
+      margin-right:0;
+    }
+
+    .float-wa i{
+      margin-right:0;
+      font-size:28px;
+    }
+
+    @media(max-width:920px){
+      .topbar .container{
+        justify-content:center;
+        text-align:center;
+      }
+      .topbar-group,
+      .topbar-socials{
+        justify-content:center;
+      }
+    }
+
+  
+    .social-links{display:flex;gap:14px;align-items:center;}
+    .social-links .social-link,
+    footer .footer-links a[aria-label="Instagram"],
+    footer .footer-links a[aria-label="Facebook"]{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:42px;
+      height:42px;
+      border-radius:50%;
+      background:rgba(255,255,255,.10);
+      color:#fff;
+      font-size:18px;
+    }
+    .social-links .social-link:hover,
+    footer .footer-links a[aria-label="Instagram"]:hover,
+    footer .footer-links a[aria-label="Facebook"]:hover{
+      background:rgba(255,255,255,.18);
+      text-decoration:none;
+    }
+
+
+    .mobile-tabs{
+      display:none;
+    }
+
+    @media(max-width:760px){
+      .topbar{
+        font-size:12.5px;
+      }
+
+      .topbar .container{
+        min-height:auto;
+        padding:8px 0;
+        gap:6px;
+      }
+
+      .topbar-group{
+        width:100%;
+        justify-content:center;
+        gap:8px 14px;
+      }
+
+      .topbar-item{
+        gap:6px;
+        line-height:1.25;
+      }
+
+      .topbar-item i{
+        font-size:13px;
+      }
+
+      .topbar strong{
+        font-size:13px;
+      }
+
+      .topbar-socials{
+        width:100%;
+        justify-content:center;
+        gap:18px;
+        padding-top:2px;
+      }
+
+      .topbar-socials a{
+        width:22px;
+        height:22px;
+        font-size:17px;
+      }
+
+      .nav{
+        min-height:72px;
+        gap:12px;
+      }
+
+      .brand{
+        gap:10px;
+      }
+
+      .brand-title{
+        font-size:15px;
+        line-height:1.12;
+      }
+
+      .hero{
+        min-height:auto;
+      }
+
+      .hero .container{
+        padding:36px 0 30px;
+      }
+
+      .hero-panel{
+        display:none;
+      }
+
+      .hero h1{
+        font-size:clamp(34px,12vw,54px);
+        margin-bottom:18px;
+      }
+
+      .hero p{
+        font-size:17px;
+        margin-bottom:24px;
+      }
+
+      .hero-actions{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:12px;
+      }
+
+      .mobile-tabs{
+        display:block;
+        background:#fff;
+        border-bottom:1px solid rgba(6,43,85,.10);
+        padding:14px 0 10px;
+        position:sticky;
+        top:72px;
+        z-index:45;
+        box-shadow:0 10px 26px rgba(6,43,85,.06);
+      }
+
+      .mobile-tabs .container{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        gap:8px;
+      }
+
+      .mobile-tab{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        min-height:42px;
+        border-radius:6px;
+        background:#f3faff;
+        border:1px solid rgba(6,43,85,.12);
+        color:#062b55;
+        font-family:Montserrat,Arial,sans-serif;
+        font-weight:900;
+        font-size:12px;
+        text-transform:uppercase;
+        letter-spacing:.02em;
+      }
+
+      .mobile-tab:active,
+      .mobile-tab:hover{
+        background:#062b55;
+        color:#fff;
+      }
+
+      .quick{
+        display:none;
+      }
+
+      #processo,
+      #dicas{
+        display:none;
+      }
+
+      .section{
+        padding:46px 0;
+      }
+
+      #servicos .section-title,
+      #empresa .section-label,
+      #contato .panel>p{
+        margin-bottom:24px;
+      }
+
+      .footer-grid{
+        gap:24px;
+      }
+
+      footer{
+        padding-top:34px;
+      }
+    }
+
+    @media(max-width:420px){
+      .topbar-group:first-child{
+        display:grid;
+        grid-template-columns:1fr;
+        text-align:center;
+      }
+
+      .topbar-item{
+        justify-content:center;
+      }
+
+      .mobile-tabs{
+        top:70px;
+      }
+    }
+
+
+    /* Ajuste fino mobile: deixa o site menor no celular sem mudar desktop */
+    @media(max-width:760px){
+      body{line-height:1.48;}
+      .container{width:min(var(--max),calc(100% - 22px));}
+
+      .topbar{font-size:11.5px;}
+      .topbar .container{padding:6px 0;}
+      .topbar strong{font-size:12px;}
+      .topbar-socials{gap:14px;}
+      .topbar-socials a{width:20px;height:20px;font-size:15px;}
+
+      .nav{min-height:64px;}
+      .brand-logo{width:46px;height:46px;}
+      .brand-title{font-size:13.5px;line-height:1.08;}
+      .toggle{width:40px;height:40px;}
+      .toggle span{width:20px;margin:4px auto;}
+      .menu{top:104px;left:12px;right:12px;padding:8px;}
+      .menu a{padding:12px 10px;font-size:12px;}
+
+      .mobile-tabs{top:64px;padding:10px 0 8px;}
+      .mobile-tabs .container{gap:6px;}
+      .mobile-tab{min-height:36px;font-size:10.5px;border-radius:5px;}
+
+      .hero .container{padding:28px 0 24px;}
+      .label{font-size:11px;padding:8px 10px;margin-bottom:14px;}
+      .hero h1{font-size:clamp(28px,10vw,40px);margin-bottom:14px;line-height:1.04;}
+      .hero p{font-size:14.5px;margin-bottom:20px;}
+      .btn{padding:12px 14px;font-size:12px;}
+      .hero-actions{gap:9px;}
+
+      .section{padding:38px 0;}
+      .section-title{margin-bottom:26px;}
+      .section-label{font-size:11.5px;margin-bottom:6px;}
+      .section-title h2,
+      .about-text h2,
+      .cta h2{font-size:clamp(24px,8.4vw,32px);line-height:1.08;}
+      .section-title p,
+      .about-text p,
+      .cta p{font-size:14px;}
+
+      .business-highlight{padding:18px;border-radius:8px;gap:16px;margin-bottom:22px;}
+      .business-highlight h3{font-size:22px;}
+      .business-highlight p{font-size:14px;}
+      .business-pills{gap:7px;margin-top:12px;}
+      .business-pills span{font-size:10.5px;padding:7px 8px;}
+
+      .carousel-controls{margin-bottom:12px;gap:8px;}
+      .carousel-btn{width:40px;height:40px;font-size:19px;}
+      .carousel-image{aspect-ratio:16/9;padding:10px;}
+      .carousel-content{padding:16px;}
+      .carousel-content h3{font-size:17px;margin-bottom:7px;}
+      .carousel-content p{font-size:13.2px;margin-bottom:14px;}
+      .service-link{font-size:11.5px;padding:10px 12px;}
+      .service-badge{font-size:10px;padding:6px 8px;left:10px;top:10px;}
+      .carousel-dots{margin-top:12px;gap:7px;}
+      .dot{width:8px;height:8px;}
+      .dot.active{width:24px;}
+
+      .about-card,.panel{padding:20px;}
+      .visual-card{min-height:auto;gap:16px;}
+      .visual-title{font-size:24px;}
+      .visual-grid{gap:9px;}
+      .visual-grid div{min-height:76px;padding:10px;}
+      .visual-grid span{font-size:22px;}
+      .visual-grid strong{font-size:11.5px;}
+      .checks{gap:9px;margin:18px 0 22px;}
+      .checks li{font-size:14px;}
+
+      .contact-grid{gap:18px;}
+      .panel h3{font-size:22px;}
+      .contact-item{padding:12px;}
+      input,select,textarea{padding:11px 12px;font-size:14px;}
+      textarea{min-height:98px;}
+      label{font-size:11.5px;}
+
+      footer{padding:30px 0 18px;}
+      .footer-grid{gap:20px;padding-bottom:24px;}
+      footer h4{font-size:14px;margin-bottom:10px;}
+      .footer-bottom{font-size:12px;}
+      .float-wa{width:52px;height:52px;right:12px;bottom:12px;border-width:3px;}
+      .float-wa i{font-size:24px;}
+    }
+
+    @media(max-width:420px){
+      .hero h1{font-size:31px;}
+      .brand-title{font-size:12.8px;}
+      .mobile-tab{font-size:10px;}
+      .btn{font-size:11.5px;}
+    }
+
+  </style>
+<script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"LocalBusiness",
+    "name":"MR Antônio Refrigeração",
+    "description":"Conserto e manutenção de geladeiras, freezers, micro-ondas, máquinas de lavar, fornos, fogões e eletroportáteis em Ribeirão Preto e região.",
+    "telephone":"+55 16 99421-2565",
+    "areaServed":"Ribeirão Preto - SP e região",
+    "priceRange":"$$"
+  }
+  </script>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" rel="stylesheet"/>
+</head>
+<body>
+<div class="topbar">
+<div class="container">
+<div class="topbar-group">
+<span class="topbar-item"><i class="fa-solid fa-phone"></i>Telefone: <strong>(16) 99421-2565</strong></span>
+<span class="topbar-item"><i class="fa-regular fa-clock"></i>Seg a Sex: 09:00 - 18:00</span>
+</div>
+<div class="topbar-group topbar-socials">
+<a aria-label="Localização no Google Maps" href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+<a aria-label="Instagram" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Facebook" href="https://www.facebook.com/mrantoniorefrigeracao/" rel="noopener" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+<a aria-label="WhatsApp" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+</div>
+</div>
+<header class="header">
+<div class="container nav">
+<a aria-label="MR Antônio Refrigeração" class="brand" href="#home">
+<div class="brand-logo">
+<img alt="Logo MR Antônio Refrigeração" height="64" src="https://i.ibb.co/NgxLyPWx/Whats-App-Image-2026-05-20-at-16-31-36.jpg" width="64"/>
+</div>
+<div>
+<span class="brand-title">MR Antônio Refrigeração</span>
+</div>
+</a>
+<nav class="menu" id="menu">
+<a href="#home">Home</a>
+<a href="#servicos">Serviços</a>
+<a href="#empresa">Empresa</a>
+<a href="#contato">WhatsApp</a>
+<a href="#contato">Contato</a>
+</nav>
+<div class="actions">
+<a class="btn btn-blue" href="tel:+5516994212565"><i class="fa-solid fa-phone"></i>Ligar agora</a>
+<a class="btn btn-orange" href="#contato">WhatsApp</a>
+<button aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" class="toggle" id="toggle">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<section class="hero" id="home">
+<div class="container">
+<div>
+<div class="label">Conserto e manutenção em Ribeirão Preto</div>
+<h1>Conserto de geladeiras, freezers e aparelhos <span>em Ribeirão Preto</span></h1>
+<p>Chame pelo WhatsApp, explique o defeito e receba orientação para o próximo passo.</p>
+<div class="hero-actions">
+<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Falar no WhatsApp</a>
+<a class="btn btn-outline" href="#servicos">Ver serviços</a>
+</div>
+</div>
+<aside class="hero-panel">
+<h3>Casa, comércio e empresa</h3>
+<p>Para casa, loja e comércio. Você chama, informa o defeito e combina o melhor horário.</p>
+<ul class="hero-list">
+<li>Geladeira e freezers residenciais e comerciais</li>
+<li>Micro-ondas, forno, fogão e eletroportáteis</li>
+<li>Atendimento para empresas, comércios e pequenos negócios</li>
+</ul>
+</aside>
+</div>
+</section>
+<section aria-label="Destaques" class="quick">
+<div class="container quick-grid">
+<div class="quick-box">
+<div>
+<strong>Refrigeração</strong>
+<span>Quando não gela, vaza, faz barulho ou desarma.</span>
+</div>
+</div>
+<div class="quick-box">
+<div>
+<strong>Eletrodomésticos</strong>
+<span>Reparo para cozinha, lavanderia e pequenos aparelhos.</span>
+</div>
+</div>
+<a class="quick-box business" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">
+<div>
+<strong>Empresas</strong>
+<span>Suporte para lojas, cozinhas e pequenos negócios.</span>
+</div>
+</a>
+<div class="quick-box">
+<div>
+<strong>Ribeirão Preto</strong>
+<span>Horário combinado direto com você.</span>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="servicos">
+<div class="container">
+<div class="section-title">
+<span class="section-label">Serviços</span>
+<h2>O que fazemos</h2>
+<p>Escolha o equipamento e fale direto pelo WhatsApp.</p>
+</div>
+<div class="business-highlight">
+<div>
+<h3>Para empresas e comércios</h3>
+<p>Para lojas, cozinhas, mercados, escritórios e pequenos negócios.</p>
+<div class="business-pills">
+<span>Freezer</span>
+<span>Geladeira</span>
+<span>Cozinha comercial</span>
+<span>Reparo</span>
+</div>
+</div>
+<div class="business-actions">
+<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">Para empresas e comércios</a>
+</div>
+</div>
+<div class="carousel-wrap">
+<div class="carousel-controls">
+<button aria-label="Anterior" class="carousel-btn" id="prevBtn">‹</button>
+<button aria-label="Próximo" class="carousel-btn" id="nextBtn">›</button>
+</div>
+<div class="carousel-track" id="servicesCarousel">
+<article aria-label="Geladeira" class="carousel-card">
+<div class="carousel-image">
+<img alt="Geladeira" class="tall-appliance" loading="lazy" src="https://i.ibb.co/LXGhYJXf/image.png"/>
+<span class="service-badge">Refrigeração</span>
+</div>
+<div class="carousel-content">
+<h3>Geladeira</h3>
+<p>Não gela direito, vaza, faz barulho, desarma ou apresenta falha no funcionamento.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20geladeira." rel="noopener" target="_blank">Ver geladeira →</a>
+</div>
+</article>
+<article aria-label="Freezer" class="carousel-card">
+<div class="carousel-image">
+<img alt="Freezer" loading="lazy" src="https://i.ibb.co/YFL8ZDJc/image.png"/>
+<span class="service-badge">Refrigeração</span>
+</div>
+<div class="carousel-content">
+<h3>Freezer</h3>
+<p>Freezer horizontal ou vertical com perda de temperatura, gelo excessivo ou falha elétrica.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20freezer." rel="noopener" target="_blank">Ver freezer →</a>
+</div>
+</article>
+<article aria-label="Micro-ondas" class="carousel-card">
+<div class="carousel-image">
+<img alt="Micro-ondas" loading="lazy" src="https://i.ibb.co/7tqrtd01/image.png"/>
+<span class="service-badge">Eletrodomésticos</span>
+</div>
+<div class="carousel-content">
+<h3>Micro-ondas</h3>
+<p>Quando não esquenta, desliga sozinho, solta faísca, trava o painel ou para o prato.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20micro-ondas." rel="noopener" target="_blank">Ver micro-ondas →</a>
+</div>
+</article>
+<article aria-label="Máquina de lavar" class="carousel-card">
+<div class="carousel-image">
+<img alt="Máquina de lavar" class="tall-appliance" loading="lazy" src="https://i.ibb.co/qMtc2kMz/image.png"/>
+<span class="service-badge">Lavanderia</span>
+</div>
+<div class="carousel-content">
+<h3>Máquina de lavar</h3>
+<p>Falha para encher, drenar, centrifugar, bater roupa ou vazamento durante o uso.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20m%C3%A1quina%20de%20lavar." rel="noopener" target="_blank">Ver máquina →</a>
+</div>
+</article>
+<article aria-label="Panela elétrica" class="carousel-card">
+<div class="carousel-image">
+<img alt="Panela elétrica" loading="lazy" src="https://i.ibb.co/n8ZbBBrm/image.png"/>
+<span class="service-badge">Eletroportátil</span>
+</div>
+<div class="carousel-content">
+<h3>Panela elétrica</h3>
+<p>Não liga, não aquece, desarma ou apresenta mau contato.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20panela%20el%C3%A9trica." rel="noopener" target="_blank">Ver panela →</a>
+</div>
+</article>
+<article aria-label="Fritadeira elétrica" class="carousel-card">
+<div class="carousel-image">
+<img alt="Fritadeira" loading="lazy" src="https://i.ibb.co/dwLybKg0/image.png"/>
+<span class="service-badge">Eletroportátil</span>
+</div>
+<div class="carousel-content">
+<h3>Fritadeira</h3>
+<p>Air fryer ou fritadeira com falha no aquecimento, painel, resistência ou mau contato.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20fritadeira%20el%C3%A9trica%20ou%20air%20fryer." rel="noopener" target="_blank">Ver fritadeira →</a>
+</div>
+</article>
+<article aria-label="Forno" class="carousel-card">
+<div class="carousel-image">
+<img alt="Forno" loading="lazy" src="https://i.ibb.co/B5hnXR1J/image.png"/>
+<span class="service-badge">Cozinha</span>
+</div>
+<div class="carousel-content">
+<h3>Forno</h3>
+<p>Forno com problema no aquecimento, acendimento, resistência, termostato ou painel.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20forno." rel="noopener" target="_blank">Ver forno →</a>
+</div>
+</article>
+<article aria-label="Fogão" class="carousel-card">
+<div class="carousel-image">
+<img alt="Fogão" loading="lazy" src="https://i.ibb.co/pB09jkjp/image.png"/>
+<span class="service-badge">Cozinha</span>
+</div>
+<div class="carousel-content">
+<h3>Fogão</h3>
+<p>Fogão ou cooktop com acendimento ruim, chama irregular, botão travado ou suspeita de vazamento.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20fog%C3%A3o." rel="noopener" target="_blank">Ver fogão →</a>
+</div>
+</article>
+</div>
+<div aria-label="Navegação do carrossel" class="carousel-dots" id="carouselDots"></div>
+</div>
+</div>
+</section>
+<section class="section about" id="empresa">
+<div class="container about-grid">
+<div aria-label="Serviços MR Antônio Refrigeração" class="about-card visual-card">
+<div class="visual-title">Manutenção</div>
+<div class="visual-grid">
+<div><strong>Geladeira</strong></div>
+<div><strong>Freezer</strong></div>
+<div><strong>Micro-ondas</strong></div>
+<div><strong>Máquinas</strong></div>
+</div>
+<p>Casa, loja e comércio em Ribeirão Preto e região.</p>
+</div>
+<div class="about-text">
+<span class="section-label">Empresa</span>
+<h2>Sobre a MR Antônio</h2>
+<p>A empresa atende geladeiras, freezers e eletrodomésticos com foco em solução prática e contato direto.</p>
+<p>Explique o problema e receba um retorno pelo WhatsApp.</p>
+<ul class="checks">
+<li>Atendimento em Ribeirão Preto e região</li>
+<li>Serviços para linha branca, refrigeração e eletroportáteis</li>
+<li>Atendimento por telefone e WhatsApp</li>
+<li>WhatsApp conforme avaliação do equipamento</li>
+</ul>
+<div class="hero-actions">
+<a class="btn btn-blue" href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">Ver localização</a>
+<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Falar no WhatsApp</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="processo">
+<div class="container">
+<div class="section-title">
+<span class="section-label">Passo a passo</span>
+<h2>Como funciona</h2>
+<p>Do primeiro contato até a definição do serviço.</p>
+</div>
+<div class="steps">
+<div class="step">
+<div class="step-number">01</div>
+<h3>Contato</h3>
+<p>Você chama pelo WhatsApp, telefone ou formulário.</p>
+</div>
+<div class="step">
+<div class="step-number">02</div>
+<h3>Informações</h3>
+<p>Informe aparelho, defeito, bairro e melhor horário.</p>
+</div>
+<div class="step">
+<div class="step-number">03</div>
+<h3>Avaliação</h3>
+<p>O problema é avaliado para indicar a melhor solução.</p>
+</div>
+<div class="step">
+<div class="step-number">04</div>
+<h3>WhatsApp</h3>
+<p>Valor definido conforme análise, peças e serviço.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="dicas">
+<div class="container">
+<div class="section-title">
+<span class="section-label">Cuidados</span>
+<h2>Cuidados rápidos</h2>
+<p>Alguns cuidados ajudam a evitar defeitos comuns no dia a dia.</p>
+</div>
+<div class="tips">
+<article class="tip">
+<div class="tip-head">
+<strong>Geladeira e freezer</strong>
+</div>
+<div class="tip-body">
+<p>Evite porta aberta por muito tempo, limpe as borrachas e não bloqueie a saída de ar.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20geladeira%20ou%20freezer." rel="noopener" target="_blank">Pedir ajuda →</a>
+</div>
+</article>
+<article class="tip">
+<div class="tip-head">
+<strong>Micro-ondas</strong>
+</div>
+<div class="tip-body">
+<p>Não use metal. Se sair faísca, cheiro forte ou parar de esquentar, suspenda o uso.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20micro-ondas." rel="noopener" target="_blank">Pedir ajuda →</a>
+</div>
+</article>
+<article class="tip">
+<div class="tip-head">
+<strong>Empresas</strong>
+<i class="fa-solid fa-briefcase"></i>
+</div>
+<div class="tip-body">
+<p>Em comércio, defeito pequeno pode virar prejuízo rápido. Chame antes de perder produto.</p>
+<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">Empresas →</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="cta">
+<div class="container cta-grid">
+<div>
+<h2>Precisa de ajuda?</h2>
+<p>Explique o problema e receba o próximo passo.</p>
+</div>
+<div class="cta-actions">
+<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Enviar mensagem</a>
+<a class="btn btn-orange" href="tel:+5516994212565"><i class="fa-solid fa-phone"></i>Ligar agora</a>
+</div>
+</div>
+</section>
+<section class="section contact" id="contato">
+<div class="container contact-grid">
+<div class="panel">
+<h3>Contato</h3>
+<p>Canais oficiais da empresa.</p>
+<div class="contact-list">
+<a class="contact-item" href="tel:+5516994212565">
+<i class="fa-solid fa-phone"></i><div><strong>Telefone</strong><span>(16) 99421-2565</span></div></a>
+<a class="contact-item" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">
+<i class="fa-brands fa-whatsapp"></i><div><strong>WhatsApp</strong><span>Resposta pelo aplicativo</span></div></a>
+<a class="contact-item" href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">
+<i class="fa-solid fa-location-dot"></i><div><strong>Localização</strong><span>Ribeirão Preto e região</span></div></a>
+<a class="contact-item" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank">
+<i class="fa-brands fa-instagram"></i><div><strong>Instagram</strong><span>@mrantoniorefrigeracao</span></div></a>
+<a class="contact-item" href="https://www.facebook.com/mrantoniorefrigeracao/" rel="noopener" target="_blank">
+<i class="fa-brands fa-facebook-f"></i><div><strong>Facebook</strong><span>MR Antônio Refrigeração</span></div></a>
+</div>
+<div aria-label="Mapa de localização" class="map-card">
+<iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20Ribeir%C3%A3o%20Preto%20SP&amp;output=embed" title="Localização MR Antônio Refrigeração">
+</iframe>
+<a href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank"><i class="fa-solid fa-location-dot"></i>Abrir no Google Maps <span>↗</span></a>
+</div>
+</div>
+<div class="panel">
+<h3>Enviar solicitação</h3>
+<p>Envie as informações do equipamento para agilizar o retorno.</p>
+<form id="quoteForm">
+<div class="field-grid">
+<div class="field">
+<label for="nome">Nome</label>
+<input id="nome" name="nome" placeholder="Seu nome" required="" type="text"/>
+</div>
+<div class="field">
+<label for="telefone">Telefone</label>
+<input id="telefone" name="telefone" placeholder="(16) 99999-9999" required="" type="tel"/>
+</div>
+</div>
+<div class="field-grid">
+<div class="field">
+<label for="equipamento">Equipamento</label>
+<select id="equipamento" name="equipamento" required="">
+<option value="">Selecione</option>
+<option>Geladeira</option>
+<option>Freezer</option>
+<option>Micro-ondas</option>
+<option>Máquina de lavar</option>
+<option>Panela elétrica</option>
+<option>Fritadeira / Air Fryer</option>
+<option>Forno</option>
+<option>Fogão</option>
+<option>Atendimento para empresa/comércio</option>
+<option>Outro</option>
+</select>
+</div>
+<div class="field">
+<label for="bairro">Bairro</label>
+<input id="bairro" name="bairro" placeholder="Seu bairro" type="text"/>
+</div>
+</div>
+<div class="field">
+<label for="mensagem">Descreva o problema</label>
+<textarea id="mensagem" name="mensagem" placeholder="Ex.: não gela, faz barulho, não liga, está vazando..."></textarea>
+</div>
+<button class="btn btn-whats" type="submit">WhatsApp</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="footer-logo">
+<div class="brand-logo">
+<img alt="Logo MR Antônio Refrigeração" height="64" src="https://i.ibb.co/NgxLyPWx/Whats-App-Image-2026-05-20-at-16-31-36.jpg" width="64"/>
+</div>
+<div>
+<span class="brand-title" style="color:#fff">MR Antônio Refrigeração</span>
+</div>
+</div>
+<p>Geladeiras, freezers, lavadoras, micro-ondas, fornos, fogões e eletroportáteis.</p>
+<div class="social-links">
+<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/mrantoniorefrigeracao/" rel="noopener" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+</div>
+</div>
+<div>
+<h4>Menu</h4>
+<ul class="footer-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#servicos">Serviços</a></li>
+<li><a href="#empresa">Empresa</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+</div>
+<div>
+<h4>Atendimento</h4>
+<ul class="footer-links">
+<li><a href="tel:+5516994212565">Telefone: (16) 99421-2565</a></li>
+<li><a href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">WhatsApp</a></li>
+<li><a href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">Ver localização</a></li>
+</ul>
+</div>
+<div>
+<h4>Redes sociais</h4>
+<ul class="footer-links">
+<li><a aria-label="Instagram" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+<li><a aria-label="Facebook" href="https://www.facebook.com/mrantoniorefrigeracao/" rel="noopener" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span id="year"></span> MR Antônio Refrigeração. Todos os direitos reservados.</span>
+<span>Ribeirão Preto - SP</span>
+</div>
+</div>
+</footer>
+<a aria-label="WhatsApp" class="float-wa" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+<script>
+    const toggle = document.getElementById('toggle');
+    const menu = document.getElementById('menu');
+
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const opened = menu.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+      });
+
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    const track = document.getElementById('servicesCarousel');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotsBox = document.getElementById('carouselDots');
+
+    function getCardStep(){
+      const card = track ? track.querySelector('.carousel-card') : null;
+      if (!card) return 320;
+      const gap = parseFloat(getComputedStyle(track).gap || '16');
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    function updateDots(){
+      if (!track || !dotsBox) return;
+      const dots = dotsBox.querySelectorAll('.dot');
+      const cardStep = getCardStep();
+      const index = Math.round(track.scrollLeft / cardStep);
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    }
+
+    if (track && prevBtn && nextBtn && dotsBox) {
+      const cards = Array.from(track.querySelectorAll('.carousel-card'));
+
+      cards.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (index === 0 ? ' active' : '');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Ir para serviço ' + (index + 1));
+        dot.addEventListener('click', () => {
+          track.scrollTo({ left: index * getCardStep(), behavior: 'smooth' });
+        });
+        dotsBox.appendChild(dot);
+      });
+
+      prevBtn.addEventListener('click', () => {
+        track.scrollBy({ left: -getCardStep(), behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        track.scrollBy({ left: getCardStep(), behavior: 'smooth' });
+      });
+
+      track.addEventListener('scroll', () => window.requestAnimationFrame(updateDots));
+      window.addEventListener('resize', updateDots);
+    }
+
+    const form = document.getElementById('quoteForm');
+
+    if (form) {
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+
+        const nome = document.getElementById('nome').value.trim();
+        const telefone = document.getElementById('telefone').value.trim();
+        const equipamento = document.getElementById('equipamento').value.trim();
+        const bairro = document.getElementById('bairro').value.trim();
+        const mensagem = document.getElementById('mensagem').value.trim();
+
+        const texto = `Olá, vim pelo site da MR Antônio Refrigeração e gostaria de solicitar um orçamento.\n\nNome: ${nome}\nTelefone: ${telefone}\nEquipamento: ${equipamento}\nBairro: ${bairro || 'Não informado'}\nProblema: ${mensagem || 'Não informado'}`;
+        const url = `https://wa.me/5516994212565?text=${encodeURIComponent(texto)}`;
+
+        window.open(url, '_blank');
+      });
+    }
+
+    document.querySelectorAll('.carousel-image img').forEach(img => {
+      img.addEventListener('error', () => {
+        img.src = 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%22900%22%20height%3D%22600%22%20viewBox%3D%220%200%20900%20600%22%3E%0A%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23062b55%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%2255%25%22%20stop-color%3D%22%230a569d%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23eaf7ff%22/%3E%0A%20%20%20%20%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%20%20%20%20%3CradialGradient%20id%3D%22r%22%20cx%3D%2275%25%22%20cy%3D%2222%25%22%20r%3D%2265%25%22%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2383ddff%22%20stop-opacity%3D%22.45%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%2383ddff%22%20stop-opacity%3D%220%22/%3E%0A%20%20%20%20%20%20%20%20%3C/radialGradient%3E%0A%20%20%20%20%20%20%3C/defs%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22600%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%20%20%20%20%20%20%3Crect%20width%3D%22900%22%20height%3D%22600%22%20fill%3D%22url%28%23r%29%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%2295%22%20cy%3D%2295%22%20r%3D%22130%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.08%22/%3E%0A%20%20%20%20%20%20%3Ccircle%20cx%3D%22805%22%20cy%3D%22505%22%20r%3D%22180%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.10%22/%3E%0A%20%20%20%20%20%20%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%22305%22%20y%3D%22105%22%20width%3D%22290%22%20height%3D%22390%22%20rx%3D%2228%22%20fill%3D%22%23ffffff%22%20opacity%3D%22.96%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cline%20x1%3D%22305%22%20y1%3D%22255%22%20x2%3D%22595%22%20y2%3D%22255%22%20stroke%3D%22%23d8e8f5%22%20stroke-width%3D%226%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%22545%22%20y%3D%22150%22%20width%3D%2216%22%20height%3D%2270%22%20rx%3D%228%22%20fill%3D%22%230a569d%22/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%22545%22%20y%3D%22310%22%20width%3D%2216%22%20height%3D%2295%22%20rx%3D%228%22%20fill%3D%22%230a569d%22/%3E%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20%20%20%3Ctext%20x%3D%2270%22%20y%3D%22505%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2244%22%20font-weight%3D%22800%22%20fill%3D%22%23ffffff%22%3EMR%20Ant%C3%B4nio%3C/text%3E%0A%20%20%20%20%20%20%3Ctext%20x%3D%2270%22%20y%3D%22548%22%20font-family%3D%22Arial%2C%20sans-serif%22%20font-size%3D%2223%22%20font-weight%3D%22500%22%20fill%3D%22%23d9f3ff%22%3ERefrigera%C3%A7%C3%A3o%3C/text%3E%0A%20%20%20%20%3C/svg%3E';
+      });
+    });
+
+    const year = document.getElementById('year');
+    if (year) year.textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
