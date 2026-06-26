@@ -1051,7 +1051,7 @@
 
     .footer-grid{
       display:grid;
-      grid-template-columns:1.1fr .65fr .85fr .75fr;
+      grid-template-columns:1.15fr .75fr .9fr;
       gap:30px;
       padding-bottom:34px;
       border-bottom:1px solid rgba(255,255,255,.12);
@@ -1562,6 +1562,418 @@
       .btn{font-size:11.5px;}
     }
 
+  
+
+    /* Ajuste extra: mais cards de cuidados e mobile mais compacto */
+    @media(min-width:1101px){
+      .tips{grid-template-columns:repeat(4,1fr);}
+    }
+
+    @media(max-width:760px){
+      .tips{gap:14px;}
+      .tip-head{min-height:58px;padding:16px;}
+      .tip-head strong{font-size:13.5px;}
+      .tip-body{padding:16px;}
+      .tip-body p{font-size:13px;margin-bottom:12px;}
+      .contact-list{gap:10px;}
+      .map-card iframe{height:180px;}
+      .about-text .hero-actions{gap:9px;}
+      .carousel-card{border-radius:7px;}
+      .business-highlight + .carousel-wrap{margin-top:4px;}
+    }
+
+    @media(max-width:420px){
+      .section{padding:34px 0;}
+      .panel{padding:18px;}
+      .contact-item strong{font-size:12px;}
+      .contact-item span{font-size:12.5px;}
+      .tip-head{min-height:54px;}
+      .tip-body{padding:14px;}
+      .tip-body p{font-size:12.8px;}
+      .service-link{font-size:11px;padding:9px 10px;}
+    }
+
+  
+
+    /* Upgrade visual: layout mais limpo e profissional */
+    body{background:linear-gradient(180deg,#ffffff 0%,#fbfdff 48%,#ffffff 100%);}
+    .topbar{background:#05264b;font-size:12.5px;}
+    .topbar .container{min-height:36px;justify-content:center;}
+    .topbar-clean{justify-content:center;gap:22px;}
+    .header{background:rgba(255,255,255,.985);}
+    .nav{min-height:78px;}
+    .brand-logo{width:58px;height:58px;border-radius:12px;}
+    .brand-title{font-size:18px;}
+    .menu a{padding:28px 12px;font-size:12.5px;}
+    .btn{border-radius:999px;padding:13px 17px;}
+    .hero{min-height:525px;background:linear-gradient(105deg,#05264b 0%,#073b73 48%,#0a5da7 100%);}
+    .hero::before{opacity:.22;background-size:78px 78px;}
+    .hero::after{content:"";position:absolute;right:-120px;bottom:-140px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.09);}
+    .hero .container{grid-template-columns:1.06fr .94fr;gap:34px;padding:50px 0;}
+    .hero h1{max-width:790px;font-size:clamp(38px,4.9vw,62px);margin-bottom:24px;}
+    .hero h1 span{display:block;color:#87ddff;}
+    .hero-tags{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px;}
+    .hero-tags span{padding:8px 11px;border-radius:999px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.16);font-size:12px;font-weight:900;text-transform:uppercase;color:#fff;}
+    .premium-panel{border-radius:18px;padding:26px;background:rgba(255,255,255,.97);border:1px solid rgba(255,255,255,.55);border-top:0;}
+    .premium-panel h3{font-size:22px;line-height:1.13;margin-bottom:18px;}
+    .hero-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px;}
+    .hero-mini-grid div{padding:14px;border-radius:14px;background:#f3faff;border:1px solid rgba(6,43,85,.08);}
+    .hero-mini-grid strong{display:block;color:var(--navy);font-family:Montserrat,Arial,sans-serif;font-size:14px;text-transform:uppercase;}
+    .hero-mini-grid span{font-size:12px;color:var(--muted);font-weight:700;}
+    .quick-grid{border-radius:18px;box-shadow:0 18px 45px rgba(6,43,85,.12);}
+    .quick-box{min-height:104px;padding:20px;}
+    .section{padding:70px 0;}
+    .section-title{margin-bottom:32px;}
+    .section-title h2,.about-text h2{font-size:clamp(30px,3.6vw,42px);}
+    .business-highlight{border-radius:18px;padding:24px 26px;margin-bottom:26px;}
+    .carousel-card{border-radius:18px;box-shadow:0 14px 34px rgba(6,43,85,.075);transition:transform .2s ease, box-shadow .2s ease;}
+    .carousel-card:hover{transform:translateY(-4px);box-shadow:0 20px 44px rgba(6,43,85,.13);}
+    .carousel-image{aspect-ratio:16/9;padding:10px;background:linear-gradient(180deg,#ffffff,#f8fcff);}
+    .carousel-content{padding:18px;}
+    .carousel-content h3{font-size:18px;margin-bottom:6px;}
+    .carousel-content p{font-size:13.5px;line-height:1.45;margin-bottom:14px;}
+    .service-link{border-radius:999px;font-size:11.5px;padding:10px 12px;box-shadow:none;}
+    .service-badge{font-size:10.5px;padding:6px 9px;background:rgba(6,43,85,.82);}
+    .carousel-btn{border-radius:999px;}
+    .about{background:linear-gradient(180deg,#f3faff,#ffffff);}
+    .about-card,.panel,.step,.tip{border-radius:18px;}
+    .premium-about{background:linear-gradient(135deg,#ffffff,#eef8ff);border-left:0;border-top:5px solid var(--orange);}
+    .premium-about .visual-grid span{color:var(--blue2);}
+    .checks li{font-size:15px;}
+    .step{padding:24px 20px;}
+    .tip-head{min-height:70px;padding:18px 20px;}
+    .tip-body{padding:18px 20px;}
+    .cta{padding:46px 0;background:linear-gradient(105deg,#05264b,#0a569d);}
+    .contact{background:#f6fbff;}
+    .contact-list{gap:10px;}
+    .contact-item{border-radius:14px;padding:12px 14px;}
+    footer{padding-top:38px;}
+    .footer-grid{grid-template-columns:1.3fr .7fr .9fr;gap:26px;}
+
+    @media(max-width:920px){
+      .topbar-clean{gap:12px 18px;}
+      .hero .container{grid-template-columns:1fr;}
+      .premium-panel{display:none;}
+    }
+
+    @media(max-width:760px){
+      .topbar .container{min-height:auto;padding:6px 0;}
+      .topbar-clean{display:flex;width:100%;gap:7px 12px;font-size:11px;}
+      .topbar-item i{font-size:11px;}
+      .nav{min-height:58px;}
+      .brand-logo{width:42px;height:42px;border-radius:9px;}
+      .brand-title{font-size:12.4px;max-width:185px;}
+      .toggle{width:38px;height:38px;border-radius:999px;}
+      .menu{top:94px;}
+      .mobile-tabs{top:58px;padding:8px 0 7px;}
+      .hero .container{padding:26px 0 22px;}
+      .hero h1{font-size:clamp(27px,9.6vw,38px);line-height:1.03;margin-bottom:18px;}
+      .hero-tags{margin-top:14px;gap:7px;}
+      .hero-tags span{font-size:10px;padding:6px 8px;}
+      .btn{min-height:42px;padding:10px 13px;font-size:11px;}
+      .section{padding:34px 0;}
+      .section-title{margin-bottom:20px;}
+      .section-title h2,.about-text h2,.cta h2{font-size:clamp(23px,7.8vw,30px);}
+      .business-highlight{padding:16px;border-radius:14px;}
+      .business-highlight h3{font-size:19px;}
+      .business-pills span{font-size:9.5px;padding:6px 7px;}
+      .carousel-content{padding:14px;}
+      .carousel-content h3{font-size:16px;}
+      .carousel-content p{font-size:12.5px;}
+      .carousel-image{padding:8px;}
+      .about-card,.panel{padding:16px;border-radius:14px;}
+      .visual-grid div{min-height:68px;}
+      .visual-title{font-size:22px;}
+      .checks li{font-size:13px;}
+      .contact-grid{gap:14px;}
+      .contact-item span{font-size:12.5px;}
+      .map-card iframe{height:180px;}
+      .footer-logo .brand-logo{width:44px;height:44px;}
+      .footer-grid{grid-template-columns:1fr;gap:18px;}
+      .float-wa{width:50px;height:50px;}
+    }
+
+
+    /* Correção mobile: sem cortes, seções restauradas e layout mais compacto */
+    @media(max-width:760px){
+      html,body{width:100%;max-width:100%;overflow-x:hidden;}
+      .container{width:calc(100% - 28px);max-width:100%;}
+
+      #processo,
+      #dicas{display:block !important;}
+
+      .topbar{font-size:10.5px;}
+      .topbar .container{padding:5px 0;}
+      .topbar-clean{gap:4px 10px;line-height:1.2;}
+
+      .header{position:sticky;top:0;}
+      .nav{min-height:56px;padding:7px 0;}
+      .brand-logo{width:40px;height:40px;}
+      .brand-title{font-size:11.5px;max-width:150px;line-height:1.05;}
+      .toggle{width:36px;height:36px;}
+      .menu{top:92px;}
+
+      .mobile-tabs{top:56px;padding:7px 0;background:rgba(255,255,255,.98);}
+      .mobile-tabs .container{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;}
+      .mobile-tab{min-height:32px;font-size:9.5px;padding:0 4px;}
+
+      .hero{min-height:auto;}
+      .hero .container{padding:24px 0 20px;}
+      .hero h1{
+        max-width:100%;
+        font-size:clamp(24px,8.4vw,34px);
+        line-height:1.04;
+        letter-spacing:-.035em;
+        margin-bottom:16px;
+        overflow-wrap:break-word;
+        word-break:normal;
+      }
+      .hero h1 span{display:inline;color:#83ddff;}
+      .hero-actions{gap:8px;}
+      .hero-actions .btn{width:100%;min-height:38px;font-size:10.5px;padding:9px 12px;}
+      .hero-tags{gap:6px;margin-top:12px;}
+      .hero-tags span{font-size:8.8px;padding:5px 7px;}
+
+      .section{padding:30px 0;}
+      .section-title{margin-bottom:16px;}
+      .section-title h2,.about-text h2,.cta h2{font-size:clamp(22px,7.2vw,28px);line-height:1.08;}
+
+      .business-highlight{padding:14px;border-radius:12px;margin-bottom:18px;}
+      .business-highlight h3{font-size:17px;line-height:1.12;}
+      .business-highlight p{font-size:12.5px;line-height:1.35;}
+      .business-pills{gap:5px;margin-top:10px;}
+      .business-pills span{font-size:8.8px;padding:5px 6px;}
+      .business-actions .btn{min-height:38px;font-size:10px;padding:9px 10px;}
+
+      .carousel-controls{margin-bottom:10px;}
+      .carousel-btn{width:36px;height:36px;font-size:18px;}
+      .carousel-track{grid-auto-columns:100%;gap:12px;}
+      .carousel-card{border-radius:13px;}
+      .carousel-image{aspect-ratio:16/8.8;padding:8px;}
+      .carousel-content{padding:13px;}
+      .carousel-content h3{font-size:15px;margin-bottom:5px;}
+      .carousel-content p{font-size:12px;line-height:1.35;margin-bottom:12px;}
+      .service-link{min-height:36px;font-size:10px;padding:9px 10px;}
+      .service-badge{font-size:9px;padding:5px 7px;}
+
+      .about-grid{gap:16px;}
+      .about-card,.panel{padding:14px;border-radius:12px;}
+      .visual-title{font-size:20px;}
+      .visual-grid{gap:8px;}
+      .visual-grid div{min-height:62px;padding:8px;}
+      .visual-grid span{font-size:19px;}
+      .visual-grid strong{font-size:10px;}
+      .about-text p{font-size:12.8px;margin-bottom:12px;}
+      .checks{gap:8px;margin:14px 0 18px;}
+      .checks li{font-size:12px;line-height:1.35;}
+      .checks li::before{width:20px;height:20px;font-size:12px;}
+
+      .steps{grid-template-columns:1fr;gap:12px;}
+      .step{padding:16px 14px;border-radius:12px;}
+      .step-number{font-size:34px;top:12px;right:14px;}
+      .step h3{font-size:14px;margin-bottom:6px;}
+      .step p{font-size:12px;line-height:1.35;}
+
+      .tips{grid-template-columns:1fr;gap:12px;}
+      .tip{border-radius:12px;}
+      .tip-head{min-height:48px;padding:12px 14px;}
+      .tip-head strong{font-size:12px;}
+      .tip-body{padding:13px 14px;}
+      .tip-body p{font-size:12px;line-height:1.35;margin-bottom:10px;}
+
+      .cta{padding:28px 0;}
+      .cta-grid{gap:14px;}
+      .cta-actions{gap:9px;}
+      .cta-actions .btn{width:100%;}
+
+      .contact-grid{gap:12px;}
+      .panel h3{font-size:19px;}
+      .panel>p{font-size:12.5px;margin-bottom:14px;}
+      .contact-item{padding:10px 11px;border-radius:11px;}
+      .contact-item strong{font-size:11px;}
+      .contact-item span{font-size:11.8px;}
+      .map-card iframe{height:150px;}
+
+      footer{padding-top:26px;}
+      .footer-grid{gap:16px;}
+      .footer-logo .brand-logo{width:40px;height:40px;}
+      footer h4{font-size:13px;}
+      .footer-links{gap:6px;font-size:12px;}
+      .footer-bottom{font-size:11px;}
+      .float-wa{width:48px;height:48px;right:12px;bottom:12px;}
+    }
+
+    @media(max-width:390px){
+      .hero h1{font-size:25px;}
+      .brand-title{font-size:10.8px;max-width:135px;}
+      .topbar-clean{font-size:10px;}
+      .mobile-tab{font-size:9px;}
+    }
+
+  
+
+    /* Cuidados rápidos: prévia em carrossel + grade completa compacta */
+    .tips-preview-section{background:#fff;}
+    .all-tips-section{display:none;background:var(--ice);border-top:1px solid rgba(6,43,85,.08);min-height:calc(100vh - 86px);}
+    body.dicas-open main > section:not(#dicas){display:none !important;}
+    body.dicas-open .all-tips-section{display:block;}
+    .all-tips-title-row{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px;}
+    .all-tips-title-row .section-title{margin:0;text-align:left;}
+    .back-site-btn{padding:11px 15px;font-size:12px;}
+    .compact-title{margin-bottom:24px;}
+    .tips-preview-wrap{position:relative;}
+    .tips-preview-head{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:14px;}
+    .tips-controls{margin-bottom:0;}
+    .tips-carousel-track{
+      display:grid;
+      grid-auto-flow:column;
+      grid-auto-columns:calc((100% - 66px)/4);
+      gap:22px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      scrollbar-width:none;
+      padding:2px 2px 8px;
+    }
+    .tips-carousel-track::-webkit-scrollbar{display:none;}
+    .tip-preview{scroll-snap-align:start;min-height:190px;}
+    .tips-dots{margin-top:10px;}
+    .see-more-tips{min-width:132px;}
+    .tips-grid-compact{
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:14px;
+    }
+    .compact-tip{box-shadow:0 10px 24px rgba(6,43,85,.06);border-radius:12px;}
+    .compact-tip .tip-head{min-height:52px;padding:13px 15px;}
+    .compact-tip .tip-head strong{font-size:12.5px;line-height:1.15;}
+    .compact-tip .tip-body{padding:14px 15px;}
+    .compact-tip .tip-body p{font-size:12.6px;line-height:1.38;margin-bottom:0;}
+
+    @media(max-width:900px){
+      .tips-carousel-track{grid-auto-columns:calc((100% - 14px)/2);gap:14px;}
+      .tips-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;}
+    }
+
+    @media(max-width:760px){
+      #cuidados,#dicas{display:block !important;}
+      .tips-preview-section,.all-tips-section{padding:34px 0;}
+      .compact-title{margin-bottom:18px;}
+      .tips-preview-head{margin-bottom:10px;}
+      .all-tips-title-row{align-items:flex-start;margin-bottom:14px;}
+      .back-site-btn{padding:9px 11px;font-size:10.5px;white-space:nowrap;}
+      .tips-controls .carousel-btn{width:34px;height:34px;font-size:17px;}
+      .see-more-tips{min-width:auto;padding:10px 13px;font-size:11px;}
+      .tips-carousel-track{grid-auto-columns:100%;gap:12px;padding-bottom:4px;}
+      .tip-preview{min-height:142px;border-radius:12px;}
+      .tip-preview .tip-head{min-height:46px;padding:12px 14px;}
+      .tip-preview .tip-body{padding:13px 14px;}
+      .tip-preview .tip-body p{font-size:12px;line-height:1.35;margin-bottom:0;}
+      .tips-grid-compact{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;}
+      .compact-tip{border-radius:10px;}
+      .compact-tip .tip-head{min-height:42px;padding:10px 11px;}
+      .compact-tip .tip-head strong{font-size:10.5px;}
+      .compact-tip .tip-body{padding:10px 11px;}
+      .compact-tip .tip-body p{font-size:10.8px;line-height:1.28;}
+    }
+
+    @media(max-width:390px){
+      .tips-grid-compact{gap:8px;}
+      .compact-tip .tip-head{padding:9px 10px;}
+      .compact-tip .tip-body{padding:9px 10px;}
+      .compact-tip .tip-body p{font-size:10.3px;}
+    }
+
+
+    /* Ajustes solicitados: remove chips e destaca dicas */
+    .hero-tags,
+    .business-pills{display:none !important;}
+
+    .tips-preview-section{
+      background:
+        linear-gradient(180deg,#ffffff 0%,#f3faff 100%);
+      border-top:1px solid rgba(6,43,85,.08);
+      border-bottom:1px solid rgba(6,43,85,.08);
+    }
+
+    .tips-preview-section .section-title h2,
+    .all-tips-section .section-title h2{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .tips-preview-section .section-title h2::before,
+    .all-tips-section .section-title h2::before{
+      content:"\f0eb";
+      font-family:"Font Awesome 6 Free";
+      font-weight:900;
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      display:inline-grid;
+      place-items:center;
+      background:linear-gradient(135deg,#f28c22,#ffbf63);
+      color:#fff;
+      box-shadow:0 12px 24px rgba(242,140,34,.24);
+      font-size:19px;
+      flex:0 0 auto;
+    }
+
+    .tips-preview-wrap{
+      padding:18px;
+      border-radius:22px;
+      background:#fff;
+      border:1px solid rgba(6,43,85,.10);
+      box-shadow:0 18px 44px rgba(6,43,85,.09);
+    }
+
+    .tip-preview,
+    .compact-tip{
+      border-top:4px solid var(--orange);
+      background:linear-gradient(180deg,#fff 0%,#fbfdff 100%);
+    }
+
+    .tip-head{
+      background:linear-gradient(135deg,#062b55,#0a569d);
+    }
+
+    .tip-head strong{
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .tip-head strong::before{
+      content:"\f0eb";
+      font-family:"Font Awesome 6 Free";
+      font-weight:900;
+      width:24px;
+      height:24px;
+      border-radius:50%;
+      display:inline-grid;
+      place-items:center;
+      background:rgba(242,140,34,.22);
+      color:#ffd28a;
+      font-size:12px;
+      flex:0 0 auto;
+    }
+
+    .see-more-tips{
+      border-color:rgba(242,140,34,.45);
+      color:var(--navy);
+      box-shadow:0 10px 24px rgba(242,140,34,.10);
+    }
+
+    @media(max-width:760px){
+      .tips-preview-wrap{padding:13px;border-radius:16px;}
+      .tips-preview-section .section-title h2::before,
+      .all-tips-section .section-title h2::before{
+        width:34px;height:34px;border-radius:11px;font-size:16px;
+      }
+      .tip-head strong::before{width:20px;height:20px;font-size:10px;}
+    }
+
   </style>
 <script type="application/ld+json">
   {
@@ -1579,15 +1991,10 @@
 <body>
 <div class="topbar">
 <div class="container">
-<div class="topbar-group">
-<span class="topbar-item"><i class="fa-solid fa-phone"></i>Telefone: <strong>(16) 99421-2565</strong></span>
+<div class="topbar-group topbar-clean">
+<span class="topbar-item"><i class="fa-solid fa-phone"></i><strong>(16) 99421-2565</strong></span>
+<span class="topbar-item"><i class="fa-solid fa-location-dot"></i>Ribeirão Preto e região</span>
 <span class="topbar-item"><i class="fa-regular fa-clock"></i>Seg a Sex: 09:00 - 18:00</span>
-</div>
-<div class="topbar-group topbar-socials">
-<a aria-label="Localização no Google Maps" href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
-<a aria-label="Instagram" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-<a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61591233272031" rel="noopener" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-<a aria-label="WhatsApp" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 </div>
 </div>
 </div>
@@ -1605,12 +2012,11 @@
 <a href="#home">Home</a>
 <a href="#servicos">Serviços</a>
 <a href="#empresa">Empresa</a>
-<a href="#contato">WhatsApp</a>
 <a href="#contato">Contato</a>
 </nav>
 <div class="actions">
 <a class="btn btn-blue" href="tel:+5516994212565"><i class="fa-solid fa-phone"></i>Ligar agora</a>
-<a class="btn btn-orange" href="#contato">WhatsApp</a>
+<a class="btn btn-orange" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
 <button aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" class="toggle" id="toggle">
 <span></span><span></span><span></span>
 </button>
@@ -1621,22 +2027,24 @@
 <section class="hero" id="home">
 <div class="container">
 <div>
-<div class="label">Conserto e manutenção em Ribeirão Preto</div>
-<h1>Conserto de geladeiras, freezers e aparelhos <span>em Ribeirão Preto</span></h1>
-<p>Chame pelo WhatsApp, explique o defeito e receba orientação para o próximo passo.</p>
+<h1>Conserto de geladeiras, freezers e eletrodomésticos <span>em Ribeirão Preto</span></h1>
 <div class="hero-actions">
 <a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Falar no WhatsApp</a>
 <a class="btn btn-outline" href="#servicos">Ver serviços</a>
 </div>
+
 </div>
-<aside class="hero-panel">
-<h3>Casa, comércio e empresa</h3>
-<p>Para casa, loja e comércio. Você chama, informa o defeito e combina o melhor horário.</p>
+<aside class="hero-panel premium-panel">
+<h3>Atendimento residencial e comercial</h3>
 <ul class="hero-list">
-<li>Geladeira e freezers residenciais e comerciais</li>
-<li>Micro-ondas, forno, fogão e eletroportáteis</li>
-<li>Atendimento para empresas, comércios e pequenos negócios</li>
+<li>Geladeiras e freezers residenciais e comerciais</li>
+<li>Lavadoras, micro-ondas, forno e fogão</li>
+<li>Resposta direta pelo WhatsApp</li>
 </ul>
+<div class="hero-mini-grid">
+<div><strong>Casa</strong><span>Residencial</span></div>
+<div><strong>Loja</strong><span>Comercial</span></div>
+</div>
 </aside>
 </div>
 </section>
@@ -1671,20 +2079,12 @@
 <section class="section" id="servicos">
 <div class="container">
 <div class="section-title">
-<span class="section-label">Serviços</span>
 <h2>O que fazemos</h2>
-<p>Escolha o equipamento e fale direto pelo WhatsApp.</p>
 </div>
 <div class="business-highlight">
 <div>
 <h3>Para empresas e comércios</h3>
 <p>Para lojas, cozinhas, mercados, escritórios e pequenos negócios.</p>
-<div class="business-pills">
-<span>Freezer</span>
-<span>Geladeira</span>
-<span>Cozinha comercial</span>
-<span>Reparo</span>
-</div>
 </div>
 <div class="business-actions">
 <a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">Para empresas e comércios</a>
@@ -1703,7 +2103,7 @@
 </div>
 <div class="carousel-content">
 <h3>Geladeira</h3>
-<p>Não gela direito, vaza, faz barulho, desarma ou apresenta falha no funcionamento.</p>
+<p>Não gela, vaza, faz barulho ou desarma.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20geladeira." rel="noopener" target="_blank">Ver geladeira →</a>
 </div>
 </article>
@@ -1714,7 +2114,7 @@
 </div>
 <div class="carousel-content">
 <h3>Freezer</h3>
-<p>Freezer horizontal ou vertical com perda de temperatura, gelo excessivo ou falha elétrica.</p>
+<p>Perda de temperatura, gelo excessivo ou falha elétrica.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20freezer." rel="noopener" target="_blank">Ver freezer →</a>
 </div>
 </article>
@@ -1725,7 +2125,7 @@
 </div>
 <div class="carousel-content">
 <h3>Micro-ondas</h3>
-<p>Quando não esquenta, desliga sozinho, solta faísca, trava o painel ou para o prato.</p>
+<p>Não esquenta, solta faísca, trava o painel ou desliga.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20micro-ondas." rel="noopener" target="_blank">Ver micro-ondas →</a>
 </div>
 </article>
@@ -1736,7 +2136,7 @@
 </div>
 <div class="carousel-content">
 <h3>Máquina de lavar</h3>
-<p>Falha para encher, drenar, centrifugar, bater roupa ou vazamento durante o uso.</p>
+<p>Não centrifuga, não drena, não enche ou vaza.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20m%C3%A1quina%20de%20lavar." rel="noopener" target="_blank">Ver máquina →</a>
 </div>
 </article>
@@ -1747,7 +2147,7 @@
 </div>
 <div class="carousel-content">
 <h3>Panela elétrica</h3>
-<p>Não liga, não aquece, desarma ou apresenta mau contato.</p>
+<p>Não liga, não aquece, desarma ou dá mau contato.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20panela%20el%C3%A9trica." rel="noopener" target="_blank">Ver panela →</a>
 </div>
 </article>
@@ -1758,7 +2158,7 @@
 </div>
 <div class="carousel-content">
 <h3>Fritadeira</h3>
-<p>Air fryer ou fritadeira com falha no aquecimento, painel, resistência ou mau contato.</p>
+<p>Falha no aquecimento, painel, resistência ou mau contato.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20fritadeira%20el%C3%A9trica%20ou%20air%20fryer." rel="noopener" target="_blank">Ver fritadeira →</a>
 </div>
 </article>
@@ -1769,7 +2169,7 @@
 </div>
 <div class="carousel-content">
 <h3>Forno</h3>
-<p>Forno com problema no aquecimento, acendimento, resistência, termostato ou painel.</p>
+<p>Problema no aquecimento, resistência, termostato ou painel.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20forno." rel="noopener" target="_blank">Ver forno →</a>
 </div>
 </article>
@@ -1780,7 +2180,7 @@
 </div>
 <div class="carousel-content">
 <h3>Fogão</h3>
-<p>Fogão ou cooktop com acendimento ruim, chama irregular, botão travado ou suspeita de vazamento.</p>
+<p>Acendimento ruim, chama irregular, botão travado ou suspeita de vazamento.</p>
 <a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20fog%C3%A3o." rel="noopener" target="_blank">Ver fogão →</a>
 </div>
 </article>
@@ -1791,21 +2191,18 @@
 </section>
 <section class="section about" id="empresa">
 <div class="container about-grid">
-<div aria-label="Serviços MR Antônio Refrigeração" class="about-card visual-card">
-<div class="visual-title">Manutenção</div>
+<div aria-label="Serviços MR Antônio Refrigeração" class="about-card visual-card premium-about">
+<div class="visual-title">Atendimento técnico</div>
 <div class="visual-grid">
-<div><strong>Geladeira</strong></div>
-<div><strong>Freezer</strong></div>
-<div><strong>Micro-ondas</strong></div>
-<div><strong>Máquinas</strong></div>
+<div><span><i class="fa-solid fa-snowflake"></i></span><strong>Refrigeração</strong></div>
+<div><span><i class="fa-solid fa-house"></i></span><strong>Residencial</strong></div>
+<div><span><i class="fa-solid fa-store"></i></span><strong>Comercial</strong></div>
+<div><span><i class="fa-solid fa-screwdriver-wrench"></i></span><strong>Reparo</strong></div>
 </div>
-<p>Casa, loja e comércio em Ribeirão Preto e região.</p>
 </div>
 <div class="about-text">
-<span class="section-label">Empresa</span>
 <h2>Sobre a MR Antônio</h2>
 <p>A empresa atende geladeiras, freezers e eletrodomésticos com foco em solução prática e contato direto.</p>
-<p>Explique o problema e receba um retorno pelo WhatsApp.</p>
 <ul class="checks">
 <li>Atendimento em Ribeirão Preto e região</li>
 <li>Serviços para linha branca, refrigeração e eletroportáteis</li>
@@ -1822,9 +2219,7 @@
 <section class="section" id="processo">
 <div class="container">
 <div class="section-title">
-<span class="section-label">Passo a passo</span>
 <h2>Como funciona</h2>
-<p>Do primeiro contato até a definição do serviço.</p>
 </div>
 <div class="steps">
 <div class="step">
@@ -1850,41 +2245,89 @@
 </div>
 </div>
 </section>
-<section class="section" id="dicas">
+<section class="section tips-preview-section" id="cuidados">
 <div class="container">
-<div class="section-title">
-<span class="section-label">Cuidados</span>
+<div class="section-title compact-title">
 <h2>Cuidados rápidos</h2>
-<p>Alguns cuidados ajudam a evitar defeitos comuns no dia a dia.</p>
 </div>
-<div class="tips">
-<article class="tip">
-<div class="tip-head">
-<strong>Geladeira e freezer</strong>
+<div class="tips-preview-wrap">
+<div class="tips-preview-head">
+<div class="carousel-controls tips-controls">
+<button aria-label="Dica anterior" class="carousel-btn" id="tipsPrevBtn">‹</button>
+<button aria-label="Próxima dica" class="carousel-btn" id="tipsNextBtn">›</button>
 </div>
+<a class="btn btn-outline see-more-tips" href="#dicas">Ver mais</a>
+</div>
+<div class="tips-carousel-track" id="tipsCarousel">
+<article class="tip tip-preview">
+<div class="tip-head"><strong>Geladeira</strong></div>
 <div class="tip-body">
-<p>Evite porta aberta por muito tempo, limpe as borrachas e não bloqueie a saída de ar.</p>
-<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20geladeira%20ou%20freezer." rel="noopener" target="_blank">Pedir ajuda →</a>
+<p>Evite porta aberta por muito tempo, confira a borracha e não bloqueie a saída de ar.</p>
 </div>
 </article>
-<article class="tip">
-<div class="tip-head">
-<strong>Micro-ondas</strong>
+<article class="tip tip-preview">
+<div class="tip-head"><strong>Freezer</strong></div>
+<div class="tip-body">
+<p>Não raspe gelo com faca e evite sobrecarregar, para o ar frio circular melhor.</p>
 </div>
+</article>
+<article class="tip tip-preview">
+<div class="tip-head"><strong>Micro-ondas</strong></div>
 <div class="tip-body">
 <p>Não use metal. Se sair faísca, cheiro forte ou parar de esquentar, suspenda o uso.</p>
-<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20preciso%20de%20um%20or%C3%A7amento%20para%20conserto%20de%20micro-ondas." rel="noopener" target="_blank">Pedir ajuda →</a>
 </div>
 </article>
-<article class="tip">
-<div class="tip-head">
-<strong>Empresas</strong>
-<i class="fa-solid fa-briefcase"></i>
-</div>
+<article class="tip tip-preview">
+<div class="tip-head"><strong>Máquina de lavar</strong></div>
 <div class="tip-body">
-<p>Em comércio, defeito pequeno pode virar prejuízo rápido. Chame antes de perder produto.</p>
-<a class="service-link" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">Empresas →</a>
+<p>Evite excesso de roupa e sabão. Limpe o filtro e observe barulhos ou vazamentos.</p>
 </div>
+</article>
+</div>
+<div aria-label="Navegação das dicas" class="carousel-dots tips-dots" id="tipsDots"></div>
+</div>
+</div>
+</section>
+<section class="section all-tips-section" id="dicas">
+<div class="container">
+<div class="all-tips-title-row">
+<div class="section-title compact-title">
+<h2>Todas as dicas</h2>
+</div>
+<a class="btn btn-outline back-site-btn" href="#cuidados">Voltar ao site</a>
+</div>
+<div class="tips tips-grid-compact">
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Geladeira</strong></div>
+<div class="tip-body"><p>Evite porta aberta por muito tempo, confira a borracha e não bloqueie a saída de ar.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Freezer</strong></div>
+<div class="tip-body"><p>Não raspe gelo com faca e evite sobrecarregar, para o ar frio circular melhor.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Micro-ondas</strong></div>
+<div class="tip-body"><p>Não use metal. Se sair faísca, cheiro forte ou parar de esquentar, suspenda o uso.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Máquina de lavar</strong></div>
+<div class="tip-body"><p>Evite excesso de roupa e sabão. Limpe o filtro e observe barulhos ou vazamentos.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Panela elétrica</strong></div>
+<div class="tip-body"><p>Não molhe a base elétrica e evite ligar se houver mau contato ou cheiro de queimado.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Fritadeira / Air Fryer</strong></div>
+<div class="tip-body"><p>Mantenha a entrada de ar livre e pare o uso se o aquecimento falhar ou o painel oscilar.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Forno</strong></div>
+<div class="tip-body"><p>Limpe sem encharcar o painel e suspenda o uso se não aquecer ou desarmar.</p></div>
+</article>
+<article class="tip compact-tip">
+<div class="tip-head"><strong>Fogão</strong></div>
+<div class="tip-body"><p>Se sentir cheiro de gás, feche o registro, ventile o ambiente e não acione interruptores.</p></div>
 </article>
 </div>
 </div>
@@ -1893,7 +2336,6 @@
 <div class="container cta-grid">
 <div>
 <h2>Precisa de ajuda?</h2>
-<p>Explique o problema e receba o próximo passo.</p>
 </div>
 <div class="cta-actions">
 <a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Enviar mensagem</a>
@@ -1909,8 +2351,6 @@
 <div class="contact-list">
 <a class="contact-item" href="tel:+5516994212565">
 <i class="fa-solid fa-phone"></i><div><strong>Telefone</strong><span>(16) 99421-2565</span></div></a>
-<a class="contact-item" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">
-<i class="fa-brands fa-whatsapp"></i><div><strong>WhatsApp</strong><span>Resposta pelo aplicativo</span></div></a>
 <a class="contact-item" href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">
 <i class="fa-solid fa-location-dot"></i><div><strong>Localização</strong><span>Ribeirão Preto e região</span></div></a>
 <a class="contact-item" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank">
@@ -1926,7 +2366,6 @@
 </div>
 <div class="panel">
 <h3>Enviar solicitação</h3>
-<p>Envie as informações do equipamento para agilizar o retorno.</p>
 <form id="quoteForm">
 <div class="field-grid">
 <div class="field">
@@ -1983,10 +2422,6 @@
 </div>
 </div>
 <p>Geladeiras, freezers, lavadoras, micro-ondas, fornos, fogões e eletroportáteis.</p>
-<div class="social-links">
-<a aria-label="Instagram" class="social-link" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-<a aria-label="Facebook" class="social-link" href="https://www.facebook.com/profile.php?id=61591233272031" rel="noopener" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-</div>
 </div>
 <div>
 <h4>Menu</h4>
@@ -2003,13 +2438,6 @@
 <li><a href="tel:+5516994212565">Telefone: (16) 99421-2565</a></li>
 <li><a href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">WhatsApp</a></li>
 <li><a href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">Ver localização</a></li>
-</ul>
-</div>
-<div>
-<h4>Redes sociais</h4>
-<ul class="footer-links">
-<li><a aria-label="Instagram" href="https://www.instagram.com/mrantoniorefrigeracao/" rel="noopener" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-<li><a aria-label="Facebook" href="https://www.facebook.com/profile.php?id=61591233272031" rel="noopener" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
 </ul>
 </div>
 </div>
@@ -2084,6 +2512,105 @@
 
       track.addEventListener('scroll', () => window.requestAnimationFrame(updateDots));
       window.addEventListener('resize', updateDots);
+    }
+
+
+
+    const tipsTrack = document.getElementById('tipsCarousel');
+    const tipsPrevBtn = document.getElementById('tipsPrevBtn');
+    const tipsNextBtn = document.getElementById('tipsNextBtn');
+    const tipsDotsBox = document.getElementById('tipsDots');
+
+    function getTipsStep(){
+      const card = tipsTrack ? tipsTrack.querySelector('.tip-preview') : null;
+      if (!card) return 280;
+      const gap = parseFloat(getComputedStyle(tipsTrack).gap || '16');
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    function updateTipsDots(){
+      if (!tipsTrack || !tipsDotsBox) return;
+      const dots = tipsDotsBox.querySelectorAll('.dot');
+      const index = Math.round(tipsTrack.scrollLeft / getTipsStep());
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+    }
+
+    if (tipsTrack && tipsPrevBtn && tipsNextBtn && tipsDotsBox) {
+      const tipsCards = Array.from(tipsTrack.querySelectorAll('.tip-preview'));
+      tipsCards.forEach((_, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot' + (index === 0 ? ' active' : '');
+        dot.type = 'button';
+        dot.setAttribute('aria-label', 'Ir para dica ' + (index + 1));
+        dot.addEventListener('click', () => {
+          tipsTrack.scrollTo({ left: index * getTipsStep(), behavior: 'smooth' });
+        });
+        tipsDotsBox.appendChild(dot);
+      });
+      tipsPrevBtn.addEventListener('click', () => tipsTrack.scrollBy({ left: -getTipsStep(), behavior: 'smooth' }));
+      tipsNextBtn.addEventListener('click', () => tipsTrack.scrollBy({ left: getTipsStep(), behavior: 'smooth' }));
+      tipsTrack.addEventListener('scroll', () => window.requestAnimationFrame(updateTipsDots));
+      window.addEventListener('resize', updateTipsDots);
+    }
+
+
+    const seeMoreTips = document.querySelector('.see-more-tips');
+    const backSiteBtn = document.querySelector('.back-site-btn');
+
+    function openTipsPage(){
+      document.body.classList.add('dicas-open');
+      if (window.location.hash !== '#dicas') {
+        history.pushState(null, '', '#dicas');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeTipsPage(targetHash){
+      document.body.classList.remove('dicas-open');
+      if (targetHash) {
+        history.pushState(null, '', targetHash);
+        const target = document.querySelector(targetHash);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        history.pushState(null, '', window.location.pathname);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    if (seeMoreTips) {
+      seeMoreTips.addEventListener('click', function(e){
+        e.preventDefault();
+        openTipsPage();
+      });
+    }
+
+    if (backSiteBtn) {
+      backSiteBtn.addEventListener('click', function(e){
+        e.preventDefault();
+        closeTipsPage('#cuidados');
+      });
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      if (link.getAttribute('href') !== '#dicas' && !link.classList.contains('back-site-btn')) {
+        link.addEventListener('click', () => {
+          document.body.classList.remove('dicas-open');
+        });
+      }
+    });
+
+    window.addEventListener('popstate', () => {
+      if (window.location.hash === '#dicas') {
+        document.body.classList.add('dicas-open');
+        window.scrollTo(0, 0);
+      } else {
+        document.body.classList.remove('dicas-open');
+      }
+    });
+
+    if (window.location.hash === '#dicas') {
+      document.body.classList.add('dicas-open');
+      window.requestAnimationFrame(() => window.scrollTo(0, 0));
     }
 
     const form = document.getElementById('quoteForm');
