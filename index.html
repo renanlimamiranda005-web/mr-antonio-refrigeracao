@@ -1982,6 +1982,169 @@
     body.dicas-open main > section:not(#dicas){display:none !important;}
 
 
+  
+
+    /* Topbar retrátil: abre/fecha igual referência */
+    .topbar{
+      background:#052f66;
+      color:#fff;
+      overflow:hidden;
+      box-shadow:0 8px 22px rgba(6,43,85,.10);
+    }
+    .topbar-inner{
+      min-height:auto !important;
+      display:flex !important;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:0;
+      padding:0 !important;
+    }
+    .topbar-panel{
+      width:100%;
+      max-height:0;
+      opacity:0;
+      overflow:hidden;
+      transition:max-height .28s ease, opacity .2s ease, padding .28s ease;
+      padding:0;
+    }
+    .topbar.open .topbar-panel{
+      max-height:220px;
+      opacity:1;
+      padding:16px 0 8px;
+    }
+    .topbar-clean{
+      width:100%;
+      display:grid !important;
+      grid-template-columns:repeat(4,auto);
+      justify-content:center;
+      align-items:center;
+      gap:12px 22px;
+      text-align:center;
+    }
+    .topbar-item{
+      color:rgba(255,255,255,.94);
+      font-size:13px;
+      line-height:1.3;
+      white-space:nowrap;
+    }
+    .topbar-item i{color:#d9f3ff;}
+    .topbar-toggle{
+      width:44px;
+      height:28px;
+      border:0;
+      background:transparent;
+      color:#fff;
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+      opacity:.95;
+      transition:transform .2s ease, opacity .2s ease;
+    }
+    .topbar-toggle:hover{opacity:1;transform:translateY(1px);}
+    .topbar.open .topbar-toggle i{transform:rotate(180deg);}
+    .topbar-toggle i{font-size:16px;transition:transform .22s ease;}
+
+    @media(max-width:760px){
+      .topbar-clean{
+        grid-template-columns:1fr;
+        gap:10px;
+        padding:0 10px;
+      }
+      .topbar.open .topbar-panel{max-height:260px;padding:14px 0 6px;}
+      .topbar-item{font-size:13px;white-space:normal;justify-content:center;}
+      .topbar-toggle{height:26px;}
+      .menu{top:84px !important;}
+    }
+
+
+    /* Ajustes finais: menos botões de WhatsApp e menu mobile mais limpo */
+    .actions .btn-orange{display:none !important;}
+    .business-highlight{grid-template-columns:1fr;}
+    .business-actions{display:none !important;}
+    .about-text .hero-actions .btn-whats{display:none !important;}
+    .cta-actions .btn-whats{display:none !important;}
+
+    @media(max-width:920px){
+      .toggle{
+        display:flex !important;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+        gap:5px;
+        width:46px;
+        height:46px;
+        border-radius:50%;
+        background:linear-gradient(135deg,#073b73,#0a6eb7);
+        box-shadow:0 12px 26px rgba(6,43,85,.18);
+      }
+      .toggle span{
+        width:22px;
+        height:2.5px;
+        margin:0;
+        background:#fff;
+        border-radius:999px;
+        transition:transform .22s ease, opacity .18s ease;
+      }
+      .toggle.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg);}
+      .toggle.open span:nth-child(2){opacity:0;}
+      .toggle.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg);}
+
+      .menu{
+        position:fixed !important;
+        top:90px !important;
+        right:14px !important;
+        left:auto !important;
+        width:min(240px,calc(100% - 28px)) !important;
+        padding:10px !important;
+        display:grid !important;
+        gap:6px !important;
+        background:rgba(255,255,255,.98) !important;
+        border:1px solid rgba(6,43,85,.12) !important;
+        border-radius:18px !important;
+        box-shadow:0 22px 52px rgba(6,43,85,.20) !important;
+        opacity:0;
+        transform:translateY(-8px) scale(.98);
+        pointer-events:none;
+        z-index:80;
+      }
+      .menu.open{
+        opacity:1 !important;
+        transform:translateY(0) scale(1) !important;
+        pointer-events:auto !important;
+      }
+      .menu a{
+        display:flex !important;
+        align-items:center;
+        justify-content:space-between;
+        min-height:44px;
+        padding:12px 14px !important;
+        border-radius:12px !important;
+        border:1px solid rgba(6,43,85,.07);
+        background:#f7fbff;
+        color:#062b55 !important;
+        font-size:12px !important;
+        font-weight:900;
+        letter-spacing:.03em;
+      }
+      .menu a::after{
+        content:'›';
+        color:#0a6eb7;
+        font-size:18px;
+        line-height:1;
+      }
+      .menu a:hover{background:#eaf7ff !important;}
+    }
+
+    @media(max-width:760px){
+      .menu{top:86px !important;}
+      .hero-actions{grid-template-columns:1fr;}
+      .hero-actions .btn-outline{width:100%;}
+      .about-text .hero-actions{display:grid;grid-template-columns:1fr;}
+      .about-text .hero-actions .btn-blue{width:100%;}
+      .cta-actions{justify-content:flex-start;}
+    }
+
   </style>
 <script type="application/ld+json">
   {
@@ -1997,13 +2160,19 @@
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
 <body>
-<div class="topbar">
-<div class="container">
+<div class="topbar topbar-collapsed" id="topbarInfo">
+<div class="container topbar-inner">
+<div class="topbar-panel" id="topbarPanel">
 <div class="topbar-group topbar-clean">
-<span class="topbar-item"><i class="fa-solid fa-phone"></i><strong>(16) 99421-2565</strong></span>
+<span class="topbar-item"><i class="fa-solid fa-phone"></i>Telefone: <strong>(16) 99421-2565</strong></span>
 <span class="topbar-item"><i class="fa-solid fa-location-dot"></i>Ribeirão Preto e região</span>
 <span class="topbar-item"><i class="fa-regular fa-clock"></i>Seg a Sex: 09:00 - 18:00</span>
+<span class="topbar-item"><i class="fa-regular fa-envelope"></i>guerrasantos@outlook.com.br</span>
 </div>
+</div>
+<button class="topbar-toggle" id="topbarToggle" type="button" aria-expanded="false" aria-controls="topbarPanel" aria-label="Mostrar informações de contato">
+<i class="fa-solid fa-chevron-down"></i>
+</button>
 </div>
 </div>
 <header class="header">
@@ -2024,7 +2193,6 @@
 </nav>
 <div class="actions">
 <a class="btn btn-blue" href="tel:+5516994212565"><i class="fa-solid fa-phone"></i>Ligar agora</a>
-<a class="btn btn-orange" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
 <button aria-controls="menu" aria-expanded="false" aria-label="Abrir menu" class="toggle" id="toggle">
 <span></span><span></span><span></span>
 </button>
@@ -2037,7 +2205,6 @@
 <div>
 <h1>Conserto de geladeiras, freezers e eletrodomésticos <span>em Ribeirão Preto</span></h1>
 <div class="hero-actions">
-<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Falar no WhatsApp</a>
 <a class="btn btn-outline" href="#servicos">Ver serviços</a>
 </div>
 
@@ -2070,12 +2237,12 @@
 <span>Reparo para cozinha, lavanderia e pequenos aparelhos.</span>
 </div>
 </div>
-<a class="quick-box business" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">
+<div class="quick-box business">
 <div>
 <strong>Empresas</strong>
 <span>Suporte para lojas, cozinhas e pequenos negócios.</span>
 </div>
-</a>
+</div>
 <div class="quick-box">
 <div>
 <strong>Ribeirão Preto</strong>
@@ -2093,9 +2260,6 @@
 <div>
 <h3>Para empresas e comércios</h3>
 <p>Para lojas, cozinhas, mercados, escritórios e pequenos negócios.</p>
-</div>
-<div class="business-actions">
-<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o.%20Sou%20de%20uma%20empresa/com%C3%A9rcio%20e%20gostaria%20de%20solicitar%20atendimento%20t%C3%A9cnico%20para%20equipamentos%20de%20linha%20branca%20e%20refrigera%C3%A7%C3%A3o." rel="noopener" target="_blank">Para empresas e comércios</a>
 </div>
 </div>
 <div class="carousel-wrap">
@@ -2214,12 +2378,11 @@
 <ul class="checks">
 <li>Atendimento em Ribeirão Preto e região</li>
 <li>Serviços para linha branca, refrigeração e eletroportáteis</li>
-<li>Atendimento por telefone e WhatsApp</li>
-<li>WhatsApp conforme avaliação do equipamento</li>
+<li>Atendimento por telefone, formulário e canais oficiais</li>
+<li>Orientação conforme avaliação do equipamento</li>
 </ul>
 <div class="hero-actions">
 <a class="btn btn-blue" href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">Ver localização</a>
-<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Falar no WhatsApp</a>
 </div>
 </div>
 </div>
@@ -2247,7 +2410,7 @@
 </div>
 <div class="step">
 <div class="step-number">04</div>
-<h3>WhatsApp</h3>
+<h3>Orçamento</h3>
 <p>Valor definido conforme análise, peças e serviço.</p>
 </div>
 </div>
@@ -2346,7 +2509,6 @@
 <h2>Precisa de ajuda?</h2>
 </div>
 <div class="cta-actions">
-<a class="btn btn-whats" href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">Enviar mensagem</a>
 <a class="btn btn-orange" href="tel:+5516994212565"><i class="fa-solid fa-phone"></i>Ligar agora</a>
 </div>
 </div>
@@ -2444,7 +2606,6 @@
 <h4>Atendimento</h4>
 <ul class="footer-links">
 <li><a href="tel:+5516994212565">Telefone: (16) 99421-2565</a></li>
-<li><a href="https://wa.me/5516994212565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MR%20Ant%C3%B4nio%20Refrigera%C3%A7%C3%A3o%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." rel="noopener" target="_blank">WhatsApp</a></li>
 <li><a href="https://maps.app.goo.gl/cBoH6NsayjDVT6hFA" rel="noopener" target="_blank">Ver localização</a></li>
 </ul>
 </div>
@@ -2465,14 +2626,28 @@
     if (toggle && menu) {
       toggle.addEventListener('click', () => {
         const opened = menu.classList.toggle('open');
+        toggle.classList.toggle('open', opened);
         toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
       });
 
       menu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           menu.classList.remove('open');
+          toggle.classList.remove('open');
           toggle.setAttribute('aria-expanded', 'false');
         });
+      });
+    }
+
+
+    const topbarInfo = document.getElementById('topbarInfo');
+    const topbarToggle = document.getElementById('topbarToggle');
+
+    if (topbarInfo && topbarToggle) {
+      topbarToggle.addEventListener('click', () => {
+        const opened = topbarInfo.classList.toggle('open');
+        topbarToggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+        topbarToggle.setAttribute('aria-label', opened ? 'Esconder informações de contato' : 'Mostrar informações de contato');
       });
     }
 
