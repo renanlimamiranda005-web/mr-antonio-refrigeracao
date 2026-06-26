@@ -1974,6 +1974,14 @@
       .tip-head strong::before{width:20px;height:20px;font-size:10px;}
     }
 
+
+    /* Correção: "Todas as dicas" só aparece quando abrir pelo botão Ver mais */
+    #dicas.all-tips-section{display:none !important;}
+    body.dicas-open #dicas.all-tips-section{display:block !important;}
+    body:not(.dicas-open) #dicas.all-tips-section{display:none !important;}
+    body.dicas-open main > section:not(#dicas){display:none !important;}
+
+
   </style>
 <script type="application/ld+json">
   {
